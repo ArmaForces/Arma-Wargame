@@ -1,0 +1,15 @@
+# Build output
+/.hemttout/
+
+# Releases
+/releases/
+
+hemtt
+hemtt.exe
+.hemtt/local
+symbols/*
+
+# Bikey
+*.biprivatekey
+
+extension/target/
