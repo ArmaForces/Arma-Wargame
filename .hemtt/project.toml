@@ -1,14 +1,14 @@
 
-name = "ArmaForces NEW_MOD_PRETTY"
+name = "ArmaForces Wargame"
 mainprefix = "z"
-prefix = "NEW_MOD_ABBR"
+prefix = "afwg"
 
 [files]
 include = [
     "LICENSE",
     "mod.cpp",
     "README.md",
-    "armaforces_NEW_MOD_SNAKE_x64.dll",
+    "armaforces_wargame_x64.dll",
 ]
 
 exclude = ["*.psd", "*.png", "*.tga"]

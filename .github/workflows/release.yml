@@ -51,7 +51,7 @@ jobs:
         path: releases
     - uses: softprops/action-gh-release@v1
       with:
-        files: 'releases/NEW_MOD_ABBR-${{ env.VERSION }}-*.zip'
+        files: 'releases/afwg-${{ env.VERSION }}-*.zip'
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
@@ -64,7 +64,7 @@ jobs:
       with:
         itemId: '1934142795' # Id of item to update
         contentPath: '.hemttout/release'
-        changelog: 'https://github.com/ArmaForces/NEW_MOD_PRETTY/releases/tag/v${{ env.VERSION }}'
+        changelog: 'https://github.com/ArmaForces/Wargame/releases/tag/v${{ env.VERSION }}'
       env:
         STEAM_USERNAME: ${{ secrets.STEAM_USERNAME }}
         STEAM_PASSWORD: ${{ secrets.STEAM_PASSWORD }}

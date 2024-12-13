@@ -1,18 +1,17 @@
-name = "ArmaForces NEW_MOD_PRETTY"
-prefix = "NEW_MOD_ABBR"
+name = "ArmaForces Wargame"
+prefix = "afwg"
 author = "ArmaForces"
 files = [
     "LICENSE",
     "mod.cpp",
-    "README.md",
-    "armaforces_NEW_MOD_SNAKE_x64.dll",
+    "README.md"
 ]
 
 exclude = ["*.psd", "*.png", "*.tga"]
 
-modname = "armaforces_NEW_MOD_SNAKE"
-key_name = "armaforces_NEW_MOD_SNAKE_{{version}}"
-authority = "armaforces_NEW_MOD_SNAKE_{{version}}"
+modname = "armaforces_wargame"
+key_name = "armaforces_wargame_{{version}}"
+authority = "armaforces_wargame_{{version}}"
 
 releasebuild = [
     "!set_version",
@@ -23,27 +22,17 @@ releasebuild = [
 [header_exts]
 version = "{{git \"id 8\"}}"
 
-[scripts.extension]
-    show_output = true
-    steps_windows = [
-        "cd extension && cargo build --release",
-        "copy extension\\target\\release\\armaforces_NEW_MOD_SNAKE.dll armaforces_NEW_MOD_SNAKE_x64.dll"
-    ]
-    steps_linux = [
-        "echo \"Unable to build extension on Linux\""
-    ]
-
 [scripts.set_version]
     steps_windows = [
-        "powershell ./tools/Set-Version.ps1 {{version}} '@armaforces_NEW_MOD_SNAKE'"
+        "powershell ./tools/Set-Version.ps1 {{version}} '@armaforces_wargame'"
     ]
     steps_linux = [
-        "sed -i 's/0.0.0/{{version}}/' ./releases/{{version}}/@armaforces_NEW_MOD_SNAKE/mod.cpp"
+        "sed -i 's/0.0.0/{{version}}/' ./releases/{{version}}/@armaforces_wargame/mod.cpp"
     ]
     # show_output = true
 
 [scripts.publish]
     steps_windows = [
-        "powershell ./tools/Publish.ps1 {{version}} 1934142795 '@armaforces_NEW_MOD_SNAKE'"
+        "powershell ./tools/Publish.ps1 {{version}} 1934142795 '@armaforces_wargame'"
     ]
     show_output = true

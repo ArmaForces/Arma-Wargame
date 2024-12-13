@@ -10,7 +10,7 @@
  * True if message was printed <BOOL>
  *
  * Example:
- * ["Test message"] call NEW_MOD_ABBR_common_fnc_systemChat
+ * ["Test message"] call afwg_common_fnc_systemChat
  *
  * Public: No
  */

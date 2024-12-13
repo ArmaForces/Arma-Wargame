@@ -47,7 +47,7 @@ jobs:
 
     - uses: actions/upload-artifact@v2
       with:
-        name: armaforces_NEW_MOD_SNAKE
+        name: armaforces_wargame
         path: |
             releases/*.zip
-            !releases/NEW_MOD_ABBR-latest.zip
+            !releases/afwg-latest.zip

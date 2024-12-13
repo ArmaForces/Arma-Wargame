@@ -21,7 +21,7 @@ exclude-labels:
 
 change-template: '- $TITLE (#$NUMBER)'
 template: |
-  _ArmaForces NEW_MOD_PRETTY release._
+  _ArmaForces Wargame release._
 
   ## Change Log Summary
 

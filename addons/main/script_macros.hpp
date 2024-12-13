@@ -20,12 +20,12 @@
 #define ACELSTRING(module,string)   QUOTE(TRIPLES(STR,DOUBLES(ACE_PREFIX,module),string))
 #define ACECSTRING(module,string)   QUOTE(TRIPLES($STR,DOUBLES(ACE_PREFIX,module),string))
 
-// NEW_MOD_ABBR_CAPS macros
+// AFWG macros
 #define IS_MOD_LOADED(modclass)     (isClass (configFile >> "CfgPatches" >> #modclass))
 
 // Extension macros
-#define EXT "armaforces_NEW_MOD_SNAKE"
-#define EXT_LOG "armaforces_NEW_MOD_SNAKE_log"
+#define EXT "armaforces_wargame"
+#define EXT_LOG "armaforces_wargame_log"
 
-// NEW_MOD_ABBR_CAPS Debug macros
-#include "\z\NEW_MOD_ABBR\addons\main\script_debug.hpp"
+// AFWG Debug macros
+#include "\z\afwg\addons\main\script_debug.hpp"

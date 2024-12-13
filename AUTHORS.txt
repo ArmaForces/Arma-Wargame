@@ -1,4 +1,4 @@
-# ArmaForces NEW_MOD_PRETTY CONTRIBUTOR LIST
+# ArmaForces Wargame CONTRIBUTOR LIST
 # If you contributed, but are not listed here,
 # contact one of the Core Team members.
 #
@@ -10,5 +10,3 @@
 veteran29
 
 # CONTRIBUTORS
-Jonpas
-mharis001

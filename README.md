@@ -2,30 +2,25 @@
     <img src="https://avatars2.githubusercontent.com/u/50863181">
 </p>
 <p align="center">
-    <a href="https://github.com/ArmaForces/NEW_MOD_PRETTY/issues">
-        <img src="https://img.shields.io/github/issues-raw/ArmaForces/NEW_MOD_PRETTY.svg?label=Issues" alt="ArmaForces NEW_MOD_PRETTY Issues">
+    <a href="https://github.com/ArmaForces/Arma-Wargame/issues">
+        <img src="https://img.shields.io/github/issues-raw/ArmaForces/Arma-Wargame.svg?label=Issues" alt="ArmaForces Wargame Issues">
     </a>
-    <a href="https://github.com/ArmaForces/NEW_MOD_PRETTY/blob/master/LICENSE">
-        <img src="https://img.shields.io/badge/License-GPLv2-red.svg" alt="ArmaForces NEW_MOD_PRETTY License">
+    <a href="https://github.com/ArmaForces/Arma-Wargame/blob/master/LICENSE">
+        <img src="https://img.shields.io/badge/License-GPLv2-red.svg" alt="ArmaForces Wargame License">
     </a>
-    <a href="https://github.com/ArmaForces/NEW_MOD_PRETTY/actions">
-        <img src="https://github.com/ArmaForces/NEW_MOD_PRETTY/workflows/Arma/badge.svg">
+    <a href="https://github.com/ArmaForces/Arma-Wargame/actions">
+        <img src="https://github.com/ArmaForces/Arma-Wargame/workflows/Arma/badge.svg">
     </a>
 </p>
 <p align="center"><sup><strong>Requires the latest version of <a href="https://github.com/CBATeam/CBA_A3/releases/latest">CBA</a>.</strong></sup></p>
 
-**ArmaForces NEW_MOD_PRETTY** is a collaborative effort by the members of <a href="https//armaforces.com/">ArmaForces</a>, polish Arma 3 community.
+**ArmaForces Wargame** is a collaborative effort by the members of <a href="https//armaforces.com/">ArmaForces</a>, polish Arma 3 community.
 
-Main purpose of this addon is to bend and adjust Arma 3 game features to the Group gameplay needs and style.
+Main purpose of this addon is to redefine vehicle-based missions into similar experience that Wargame game series provides, for overall more enjoyable and predictable gameplay.
 
-The mod is on the same foundation as the ACE3 mod, using its framework, systems, tools and standards. It is entirely **open-source** and licensed under the GNU General Public License ([GPLv2](https://github.com/ArmaForces/NEW_MOD_PRETTY/blob/master/LICENSE)).
+The mod is on the same foundation as the ACE3 mod, using its framework, systems, tools and standards. It is entirely **open-source** and licensed under the GNU General Public License ([GPLv2](https://github.com/ArmaForces/Arma-Wargame/blob/master/LICENSE)).
 
 Huge appreciation and thanks to [ACE3 Team](http://ace3mod.com/team.html) for their open-source nature and permission to use their systems.
-
-**Replace `NEW_MOD_PRETTY`, `NEW_MOD_SNAKE`, `NEW_MOD_ABBR` and `NEW_MOD_ABBR_CAPS` with name of your mod like in examples below.**
-
-- `Mods`, `mods`, `afm`, `AFM`
-- `Mission Framework`, `mission_framework`, `afmf`, `AFMF`
 
 ## Setup
 

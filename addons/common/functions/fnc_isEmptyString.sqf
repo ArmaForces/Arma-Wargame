@@ -10,7 +10,7 @@
  * True if string is null or empty <BOOL>
  *
  * Example:
- * [nil] call NEW_MOD_ABBR_common_fnc_isEmptyString
+ * [nil] call afwg_common_fnc_isEmptyString
  *
  * Public: No
  */
