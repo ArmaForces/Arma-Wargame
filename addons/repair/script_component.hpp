@@ -12,3 +12,7 @@
 #endif
 
 #include "\z\afwg\addons\main\script_macros.hpp"
+
+// Component specific
+#define HEAL_AMOUNT 0.5
+#define HEAL_SECONDS_PER_POINT 5

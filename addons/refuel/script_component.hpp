@@ -12,3 +12,7 @@
 #endif
 
 #include "\z\afwg\addons\main\script_macros.hpp"
+
+// Component specific macros
+#define REFUEL_AMOUNT 0.05
+#define REFUEL_SECONDS_FULL 50
