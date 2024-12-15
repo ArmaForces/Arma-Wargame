@@ -8,6 +8,9 @@
  * Arguments:
  * 0: Player unit <OBJECT>
  *
+ * Return Value:
+ * None
+ *
  * Public: No
  */
 
