@@ -30,7 +30,7 @@ fnc_damagePerHe = {
     if (_armor isEqualTo 5) exitWith {0.15};
     if (_armor < 8) exitWith {0.1};
     if (_armor < 14) exitWith {0.05};
-   	0.01
+       0.01
 };
 
 private _damage = _ammoBaseDamage * ([_armor] call fnc_damagePerHe);

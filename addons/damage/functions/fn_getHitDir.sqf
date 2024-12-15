@@ -18,12 +18,12 @@
 params ["_target", "_surfaceVector", "_velocity", "_projectile"];
 
 private _hitDirVectorNormalized = if (_velocity isEqualTo [0, 0, 0]) then {
-	#ifdef DEV_DEBUG
-	HitpointHits pushBack getPosATL _projectile;
-	#endif
-	getPosATL _target vectorDiff getPosATL _projectile vectorMultiply -1
+    #ifdef DEV_DEBUG
+    HitpointHits pushBack getPosATL _projectile;
+    #endif
+    getPosATL _target vectorDiff getPosATL _projectile vectorMultiply -1
 } else {
-	vectorNormalized _surfaceVector
+    vectorNormalized _surfaceVector
 };
 
 #ifdef DEV_DEBUG
@@ -43,11 +43,11 @@ private _dotProduct = _targetDir vectorDotProduct _hitDirVectorNormalized;
 private _topHitDir = _surfaceVector#2 atan2 sqrt (_surfaceVector#0^2 + _surfaceVector#1^2);
 
 private _hitDir = if (_topHitDir > 70) then {
-	"TOP"
+    "TOP"
 } else {
     if (_dotProduct > 0.5) exitWith { "FRONT" };
     if (_dotProduct < -0.5) exitWith { "REAR" };
-	"SIDE"
+    "SIDE"
 };
 
 #ifdef DEV_DEBUG

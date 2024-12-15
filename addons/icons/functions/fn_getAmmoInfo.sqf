@@ -26,39 +26,39 @@ private _vehicleInfo = [_vehicle] call FUNC(getVehicleInfo);
 
 private _ammoInfo = _vehicleInfo getOrDefault [AMMO_PROPERTY, objNull];
 if (_ammoInfo isEqualTo objNull) then {
-	private _vehicleClassName = _vehicleInfo get CLASS_NAME_PROPERTY;
+    private _vehicleClassName = _vehicleInfo get CLASS_NAME_PROPERTY;
 
-	// diag_log format ["DDd %1", _vehicleClassName];
+    // diag_log format ["DDd %1", _vehicleClassName];
 
-	private _magazines = getArray (configFile >> "CfgVehicles" >> _vehicleClassName >> "Turrets" >> "MainTurret" >> "magazines");
-	_magazines = _magazines arrayIntersect _magazines;
+    private _magazines = getArray (configFile >> "CfgVehicles" >> _vehicleClassName >> "Turrets" >> "MainTurret" >> "magazines");
+    _magazines = _magazines arrayIntersect _magazines;
 
-	// diag_log format ["Ddd mags: %1", str _magazines];
+    // diag_log format ["Ddd mags: %1", str _magazines];
 
-	private _ammo = _magazines apply {
- 		MagazineTypes getOrDefault [toUpper _x, objNull]
-	}
-	select {_x isNotEqualTo objNull}
-	apply {
-  		[_x get CLASS_NAME_PROPERTY, _x getOrDefault [AMMO_PROPERTY, objNull]]
-	}
-	select {_x select 1 isNotEqualTo objNull}
-	apply {
-  		(_x select 1) set ["displayNameShort", getText (configFile >> "CfgMagazines" >> (_x select 0) >> "displayNameShort")];
-  		_x select 1
-	};
+    private _ammo = _magazines apply {
+         MagazineTypes getOrDefault [toUpper _x, objNull]
+    }
+    select {_x isNotEqualTo objNull}
+    apply {
+          [_x get CLASS_NAME_PROPERTY, _x getOrDefault [AMMO_PROPERTY, objNull]]
+    }
+    select {_x select 1 isNotEqualTo objNull}
+    apply {
+          (_x select 1) set ["displayNameShort", getText (configFile >> "CfgMagazines" >> (_x select 0) >> "displayNameShort")];
+          _x select 1
+    };
 
-	// diag_log ["Ddd ammo: %1", str _ammo];
+    // diag_log ["Ddd ammo: %1", str _ammo];
 
-	private _ammoInfo = createHashMap;
-	{
-		_ammoInfo set [_x get CLASS_NAME_PROPERTY, _x];
-	} forEach _ammo;
+    private _ammoInfo = createHashMap;
+    {
+        _ammoInfo set [_x get CLASS_NAME_PROPERTY, _x];
+    } forEach _ammo;
 
-	// diag_log ["Ddd ammo info: %1", str _ammoInfo];
-	
-	_vehicleInfo set [AMMO_PROPERTY, _ammoInfo];
-	// diag_log ["Ddd vehicle info: %1", str _vehicleInfo];
+    // diag_log ["Ddd ammo info: %1", str _ammoInfo];
+
+    _vehicleInfo set [AMMO_PROPERTY, _ammoInfo];
+    // diag_log ["Ddd vehicle info: %1", str _vehicleInfo];
 };
 
 _ammoInfo
@@ -84,7 +84,7 @@ if (_ammoInfo isEqualTo objNull) then {
 
     if (_ammoInfo isNotEqualTo objNull) then {
         LOG_3("Found matching parent '%1' for '%2' with vehicle info: %3",_ammoInfo get CLASS_NAME_PROPERTY,_unitClassName,str _ammoInfo);
-        
+
         _ammoInfo set [CLASS_NAME_PROPERTY, _unitClassName];
         _ammoInfo set [DISPLAY_NAME_PROPERTY, getText (configFile >> "CfgVehicles" >> _unitClassName >> DISPLAY_NAME_PROPERTY)];
         VehicleTypes set [_unitClassName, _ammoInfo];
@@ -106,7 +106,7 @@ _ammoInfo getOrDefault [_key, _defaultValue]*/
 // _hashMap set [DISPLAY_NAME_PROPERTY, getText (configFile >> "CfgAmmo" >> configName _x >> DISPLAY_NAME_PROPERTY)];
 
 /*
-	private _vehicle = get3DENSelected "Object" select 0;
+    private _vehicle = get3DENSelected "Object" select 0;
 _vehicle = vehicle player;
 
 private _magazines = getArray (configOf _vehicle >> "Turrets" >> "MainTurret" >> "magazines");

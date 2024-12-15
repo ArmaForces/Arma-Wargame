@@ -15,9 +15,9 @@
 params ["_caller", "_target"];
 
 alive _target && {
-	_caller call FUNC(isEngineer) && {
-	vehicle _caller isEqualTo _caller && {
-	_caller distance _target < 5 && {
-	fuel _target < 1 && {
-	((_target getVariable ["MDL_lastCombatActive", -GVAR(repairMinNoCombatTime)]) + GVAR(repairMinNoCombatTime)) < CBA_missionTime
+    _caller call FUNC(isEngineer) && {
+    vehicle _caller isEqualTo _caller && {
+    _caller distance _target < 5 && {
+    fuel _target < 1 && {
+    ((_target getVariable ["MDL_lastCombatActive", -GVAR(repairMinNoCombatTime)]) + GVAR(repairMinNoCombatTime)) < CBA_missionTime
 }}}}}

@@ -18,9 +18,9 @@ params ["_uid"];
 if (_uid isEqualTo "") exitWith {};
 
 if (isServer) then {
-	GVAR(allPlayersStats) getOrDefaultCall [_uid, {createHashMap}, true]
+    GVAR(allPlayersStats) getOrDefaultCall [_uid, {createHashMap}, true]
 } else {
-	private _playerData = player get ["MDL_playerStats", []];
-	if (_playerData isEqualTo []) then { _playerData = createHashMap };
-	_playerData
+    private _playerData = player get ["MDL_playerStats", []];
+    if (_playerData isEqualTo []) then { _playerData = createHashMap };
+    _playerData
 }

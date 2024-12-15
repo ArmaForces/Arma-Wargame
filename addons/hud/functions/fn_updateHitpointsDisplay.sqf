@@ -32,18 +32,18 @@ private _gutterW = _hpW / 4;
 private _indicators = [];
 for "_i" from 0 to (_totalHitPoints-1) do {
     private _hpCtrl = _display ctrlCreate ["RscText", -1, _ctrlContainer];
-	_hpCtrl ctrlSetBackgroundColor ([
+    _hpCtrl ctrlSetBackgroundColor ([
         GVAR(missingHpColor),
-    	GVAR(filledHpColor)
+        GVAR(filledHpColor)
     ] select (_i < _hitPoints));
-        
-	_hpCtrl ctrlSetPosition [
+
+    _hpCtrl ctrlSetPosition [
         _hpW * _i,
         pixelH * 4,
         _hpW - _gutterW,
-    	_hpW
+        _hpW
     ];
-	_hpCtrl ctrlCommit 0;
+    _hpCtrl ctrlCommit 0;
 
     _indicators pushBack _hpCtrl;
 };

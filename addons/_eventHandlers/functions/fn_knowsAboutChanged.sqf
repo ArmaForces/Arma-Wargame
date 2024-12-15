@@ -30,7 +30,7 @@ private _isRevealed = _targetUnit getVariable ["MDL_IsVisible", false];
 
 if (_newKnowsAbout > 0.75 && {!_isRevealed}) then {
 
-	_targetUnit setVariable ["MDL_IsVisible", true, true];
+    _targetUnit setVariable ["MDL_IsVisible", true, true];
     #ifdef DEV_DEBUG
     diag_log format ["WARGAY DEBUG KNOWS ABOUT CHANGED [%1]: Revealing Target: %3 detected by Group: %2", diag_tickTime, _group, _targetUnit, _oldKnowsAbout, _newKnowsAbout];
     #endif

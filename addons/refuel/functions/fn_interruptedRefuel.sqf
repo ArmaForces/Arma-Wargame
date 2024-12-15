@@ -18,7 +18,7 @@ private _currentFuel = fuel _target * 100;
 
 private _lastCombatActive = _target getVariable ["MDL_lastCombatActive", -GVAR(repairMinNoCombatTime)];
 if (_lastCombatActive + GVAR(repairMinNoCombatTime) > CBA_missionTime) exitWith {
-	systemChat LLSTRING(VehicleInCombat);
+    systemChat LLSTRING(VehicleInCombat);
 };
 
 systemChat format [LLSTRING(RefuelInterrupted), _currentFuel];

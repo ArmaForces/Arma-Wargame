@@ -21,7 +21,7 @@
 params ["_armor", "_ammoBaseDamage", "_velocity", "_initialVelocity"];
 
 if (_ammoBaseDamage isEqualTo 0.1) exitWith {
-	if (_armor isEqualTo 0) then { _ammoBaseDamage } else { 0 };
+    if (_armor isEqualTo 0) then { _ammoBaseDamage } else { 0 };
 };
 
 private _damageFromVelocity = _ammoBaseDamage - ((vectorMagnitude _initialVelocity - vectorMagnitude _velocity) / VELOCITY_STEP);

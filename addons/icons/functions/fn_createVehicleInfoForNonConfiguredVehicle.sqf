@@ -17,12 +17,12 @@ params ["_vehicle"];
 
 private _newVehicleInfo = createHashMapFromArray [
     [CLASS_NAME_PROPERTY, toUpper typeOf _vehicle],
-	[DISPLAY_NAME_PROPERTY, getText (configOf _vehicle >> DISPLAY_NAME_PROPERTY)],
-	["iconPath", "\A3\ui_f\data\map\markers\nato\b_unknown.paa"],
-	["markerType", "b_unknown"],
-	["pointCost", 5]
+    [DISPLAY_NAME_PROPERTY, getText (configOf _vehicle >> DISPLAY_NAME_PROPERTY)],
+    ["iconPath", "\A3\ui_f\data\map\markers\nato\b_unknown.paa"],
+    ["markerType", "b_unknown"],
+    ["pointCost", 5]
 ];
-    
+
 VehicleTypes set [toUpper typeOf _vehicle, _newVehicleInfo];
 
 _newVehicleInfo

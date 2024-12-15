@@ -19,8 +19,8 @@ if (_healAmount isEqualTo MAX_HP) exitWith {
     private _maxHp = _unit getVariable ["MDL_maxHp", MAX_HP];
     _unit setVariable ["MDL_currentHp", _maxHp, true];
     _unit setDamage 0;
-	// Heal crew
-	{_x setDamage 0} forEach crew _unit;
+    // Heal crew
+    {_x setDamage 0} forEach crew _unit;
 };
 
 private _maxHp = _unit getVariable ["MDL_maxHp", MAX_HP];

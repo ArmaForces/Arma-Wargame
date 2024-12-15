@@ -1,7 +1,7 @@
 #include "..\script_component.hpp"
 /*
  * Author: 3Mydlo3
- * 
+ *
  *
  * Arguments:
  * None
@@ -13,5 +13,5 @@
  */
 
 addMusicEventHandler ["MusicStop", {
-	[FUNC(playNextMusic), [], random 15] call CBA_fnc_waitAndExecute;
+    [FUNC(playNextMusic), [], random 15] call CBA_fnc_waitAndExecute;
 }];

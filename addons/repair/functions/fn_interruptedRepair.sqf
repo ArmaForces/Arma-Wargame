@@ -19,7 +19,7 @@ private _currentHp = _target getVariable ["MDL_currentHp", MAX_HP];
 
 private _lastCombatActive = _target getVariable ["MDL_lastCombatActive", -1];
 if (_lastCombatActive + GVAR(repairMinNoCombatTime) > CBA_missionTime) exitWith {
-	systemChat LLSTRING(VehicleInCombat);
+    systemChat LLSTRING(VehicleInCombat);
 };
 
 systemChat format [LLSTRING(RepairInterrupted), _currentHp, _maxHp];

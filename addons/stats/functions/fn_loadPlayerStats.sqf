@@ -17,7 +17,7 @@
 params [["_unit", player]];
 
 if (!isServer) exitWith {
-	["MDL_loadPlayerStats", [player]] call CBA_fnc_serverEvent;
+    ["MDL_loadPlayerStats", [player]] call CBA_fnc_serverEvent;
 };
 
 private _uid = getPlayerUID _unit;
@@ -28,8 +28,8 @@ private _playerData = [_uid] call FUNC(getPlayerStats);
 
 private _index = GVAR(loadedPlayers) pushBackUnique _uid;
 if (_index isEqualTo -1) then {
-	private _playedMissions = _playerData getOrDefault ["Missions", 0, true];
-	_playerData set ["Missions", _playedMissions + 1];
+    private _playedMissions = _playerData getOrDefault ["Missions", 0, true];
+    _playerData set ["Missions", _playedMissions + 1];
 };
 
 _unit setVariable ["MDL_playerStats", _playerData, true];

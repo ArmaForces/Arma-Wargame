@@ -1,7 +1,7 @@
 #include "..\script_component.hpp"
 /*
  * Author: 3Mydlo3
- * 
+ *
  *
  * Arguments:
  * "HitPart" EH params
@@ -17,14 +17,14 @@
 #ifdef DEV_DEBUG
 private _i = 0;
 {
-	diag_log format ["WARGAY DEBUG HIT PART [%1]: All [%2]: %3", diag_tickTime, _i, str _x];
-	_i = _i + 1;
+    diag_log format ["WARGAY DEBUG HIT PART [%1]: All [%2]: %3", diag_tickTime, _i, str _x];
+    _i = _i + 1;
 } forEach _this;
 diag_log format ["WARGAY DEBUG HIT PART [%1]: Projectile relative position: %2 | Hit relative position: %3", diag_tickTime, str (_target worldToModel getPosATL _projectile), str (_target worldToModel ASLToAGL _position)];
 #endif
 
 if (!alive _target) exitWith {
-	_target removeEventHandler [_thisEvent, _thisEventHandler];
+    _target removeEventHandler [_thisEvent, _thisEventHandler];
 };
 
 private _isHandledForTarget = _projectile getVariable [str _target, false];

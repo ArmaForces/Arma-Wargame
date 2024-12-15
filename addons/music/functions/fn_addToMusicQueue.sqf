@@ -19,13 +19,13 @@ params ["_music", ["_forceNow", false]];
 if (!isServer) exitWith {};
 
 if (_forceNow) exitWith {
-	_music remoteExec ["playMusic", 0];
+    _music remoteExec ["playMusic", 0];
 };
 
 if (_music isEqualType "") then {
-	GVAR(musicQueue) pushBack _music;
+    GVAR(musicQueue) pushBack _music;
 } else {
-	GVAR(musicQueue) append _music;
+    GVAR(musicQueue) append _music;
 };
 
 [FUNC(playNextMusic)] call CBA_fnc_execNextFrame;

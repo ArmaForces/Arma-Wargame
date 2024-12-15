@@ -18,8 +18,8 @@ params ["_uid"];
 private _wargayProgress = profileNamespace getVariable ["MDL_WG_Progress", []];
 
 if (_wargayProgress isEqualTo []) then {
-	_wargayProgress = createHashMap;
-	profileNamespace setVariable ["MDL_WG_Progress", _wargayProgress];
+    _wargayProgress = createHashMap;
+    profileNamespace setVariable ["MDL_WG_Progress", _wargayProgress];
 };
 
 _wargayProgress getOrDefaultCall ["Players", {createHashMap}, true]

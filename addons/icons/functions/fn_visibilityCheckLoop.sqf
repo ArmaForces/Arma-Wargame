@@ -16,10 +16,10 @@
 params [["_targetsToCheck", []]];
 
 if (_targetsToCheck isEqualTo []) then {
-	_targetsToCheck = vehicles select {side effectiveCommander _x isEqualTo EAST};
+    _targetsToCheck = vehicles select {side effectiveCommander _x isEqualTo EAST};
 };
 if (_targetsToCheck isEqualTo []) exitWith {
-	[FUNC(visibilityCheckLoop), [], 5] call CBA_fnc_waitAndExecute;
+    [FUNC(visibilityCheckLoop), [], 5] call CBA_fnc_waitAndExecute;
 };
 
 private _target = _targetsToCheck deleteAt (count _targetsToCheck - 1);
@@ -34,7 +34,7 @@ if (_isVisible && {!_shouldBeVisible}) then {
     #ifdef DEV_DEBUG
     diag_log format ["WARGAY DEBUG VISIBILITY CHECK [%1]: Making Target %2 not visible", diag_tickTime, _target];
     #endif
-	_target setVariable ["MDL_IsVisible", false, false];
+    _target setVariable ["MDL_IsVisible", false, false];
 };
 
 [FUNC(visibilityCheckLoop), [_targetsToCheck], 1] call CBA_fnc_waitAndExecute;
