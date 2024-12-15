@@ -1,0 +1,11 @@
+PREP(createVehicleInfoForNonConfiguredVehicle);
+PREP(currentHpString);
+PREP(drawIcon);
+PREP(getAmmoInfo);
+PREP(getIconPath);
+PREP(getVehicleDisplayName);
+PREP(getVehicleInfo);
+PREP(isReconVehicle);
+PREP(shouldStillBeVisible);
+PREP(showUnitInfo);
+PREP(visibilityCheckLoop);

@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="AFWG">
-    <Package name="Common">
-        <Key ID="STR_AFWG_Common_DisplayName">
-            <English>ArmaForces Wargame - Common</English>
-            <Polish>ArmaForces Wargame - Common</Polish>
+    <Package name="Init">
+        <Key ID="STR_AFWG_Init_DisplayName">
+            <English>ArmaForces Wargame - Init</English>
+            <Polish>ArmaForces Wargame - Init</Polish>
         </Key>
-        <Key ID="STR_AFWG_Common_Enabled">
+        <Key ID="STR_AFWG_Init_Enabled">
             <English>Enable component</English>
             <Polish>Włącz komponent</Polish>
         </Key>
-        <Key ID="STR_AFWG_Common_Enabled_Description">
+        <Key ID="STR_AFWG_Init_Enabled_Description">
             <English>Controls whether this component is active.</English>
             <Polish>Pozwala kontrolować czy komponent jest włączony.</Polish>
         </Key>

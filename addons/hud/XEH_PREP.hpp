@@ -1,0 +1,2 @@
+PREP(initHitpointsDisplay);
+PREP(updateHitpointsDisplay);

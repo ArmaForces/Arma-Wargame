@@ -1,0 +1,2 @@
+PREP(drawHitDebug);
+PREP(initDebug);

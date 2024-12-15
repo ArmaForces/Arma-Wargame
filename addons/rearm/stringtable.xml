@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="AFWG">
+    <Package name="Rearm">
+        <Key ID="STR_AFWG_Rearm_DisplayName">
+            <English>ArmaForces Wargame - Rearm</English>
+            <Polish>ArmaForces Wargame - Rearm</Polish>
+        </Key>
+        <Key ID="STR_AFWG_Rearm_Enabled">
+            <English>Enable component</English>
+            <Polish>Włącz komponent</Polish>
+        </Key>
+        <Key ID="STR_AFWG_Rearm_Enabled_Description">
+            <English>Controls whether this component is active.</English>
+            <Polish>Pozwala kontrolować czy komponent jest włączony.</Polish>
+        </Key>
+        <Key ID="STR_AFWG_Rearm_RearmFinished">
+            <English>Rearm finished</English>
+            <Polish>Przezbrojenie zakończone</Polish>
+        </Key>
+        <Key ID="STR_AFWG_Rearm_RearmInterrupted">
+            <English>Rearm interrupted</English>
+            <Polish>Przezbrojenie przerwane</Polish>
+        </Key>
+    </Package>
+</Project>

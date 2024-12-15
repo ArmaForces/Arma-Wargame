@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="AFWG">
+    <Package name="Repair">
+        <Key ID="STR_AFWG_Repair_DisplayName">
+            <English>ArmaForces Wargame - Repair</English>
+            <Polish>ArmaForces Wargame - Repair</Polish>
+        </Key>
+        <Key ID="STR_AFWG_Repair_Enabled">
+            <English>Enable component</English>
+            <Polish>Włącz komponent</Polish>
+        </Key>
+        <Key ID="STR_AFWG_Repair_Enabled_Description">
+            <English>Controls whether this component is active.</English>
+            <Polish>Pozwala kontrolować czy komponent jest włączony.</Polish>
+        </Key>
+        <Key ID="STR_AFWG_Repair_RepairFinished">
+            <English>Repair finished</English>
+            <Polish>Naprawa zakończona</Polish>
+        </Key>
+        <Key ID="STR_AFWG_Repair_RepairProgress">
+            <English>Repair progress %1/%2 HP</English>
+            <Polish>Postęp naprawy %1/%2 PŻ</Polish>
+        </Key>
+        <Key ID="STR_AFWG_Repair_RepairInterrupted">
+            <English>Repair interrupted %1/%2 HP</English>
+            <Polish>Naprawa przerwana %1/%2 PŻ</Polish>
+        </Key>
+    </Package>
+</Project>
