@@ -1,4 +1,4 @@
-#include "..\script_component.hpp"
+#include "script_component.hpp"
 /*
  * Author: 3Mydlo3
  * Handles repair progress
@@ -21,14 +21,14 @@ private _stepsWithRepair = _target getVariable ["MDL_repairAtSteps", []];
 if (_stepsWithRepair isEqualTo []) exitWith {};
 
 private _nextRepairStep = _stepsWithRepair select (count _stepsWithRepair - 1);
-                
+
 if (_frame > _nextRepairStep) then {
     // For display purposes only
     private _maxHp = _target getVariable ["MDL_maxHp", MAX_HP];
     private _currentHp = _target getVariable ["MDL_currentHp", MAX_HP];
     private _newHp = (_currentHp + HEAL_AMOUNT) min 10;
     systemChat format [LLSTRING(RepairProgress), _newHp, _maxHp];
-                    
+
     // Actual healing
     ["MDL_healDamage", [_target, HEAL_AMOUNT]] call CBA_fnc_serverEvent;
 

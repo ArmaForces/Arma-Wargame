@@ -13,5 +13,9 @@
             <English>Controls whether this component is active.</English>
             <Polish>Pozwala kontrolować czy komponent jest włączony.</Polish>
         </Key>
+        <Key ID="STR_AFWG_Common_VehicleInCombat">
+            <English>Action interrupted, vehicle is in combat.</English>
+            <Polish>Akcja przerwana, pojazd uczestniczy w walce.</Polish>
+        </Key>
     </Package>
 </Project>

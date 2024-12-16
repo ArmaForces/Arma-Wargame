@@ -1,3 +1,4 @@
+PREP(addExperienceForKill);
 PREP(getPlayerStats);
 PREP(loadAllStats);
 PREP(loadPlayerStats);

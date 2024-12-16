@@ -1,4 +1,4 @@
-#include "..\script_component.hpp"
+#include "script_component.hpp"
 /*
  * Author: 3Mydlo3
  * Handles refuel progress
@@ -21,13 +21,13 @@ private _stepsWithRefuel = _target getVariable ["MDL_refuelAtSteps", []];
 if (_stepsWithRefuel isEqualTo []) exitWith {};
 
 private _nextRefuelStep = _stepsWithRefuel select (count _stepsWithRefuel - 1);
-                
+
 if (_frame > _nextRefuelStep) then {
     // For display purposes only
     private _newFuel = fuel _target + REFUEL_AMOUNT;
     private _newFuelPercent = (_newFuel*100) min 100;
     systemChat format [LLSTRING(RefuelProgress), _newFuelPercent];
-                    
+
     // Actual refueling
     ["MDL_refuelVehicle", [_target, _newFuel]] call CBA_fnc_globalEvent;
 

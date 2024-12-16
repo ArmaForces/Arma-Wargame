@@ -1,4 +1,4 @@
-#include "..\script_component.hpp"
+#include "script_component.hpp"
 /*
  * Author: 3Mydlo3
  * Handles rearm process interruption.
@@ -16,7 +16,7 @@ params ["_target"];
 
 private _lastCombatActive = _target getVariable ["MDL_lastCombatActive", -GVAR(repairMinNoCombatTime)];
 if (_lastCombatActive + GVAR(repairMinNoCombatTime) > CBA_missionTime) exitWith {
-    systemChat LLSTRING(VehicleInCombat);
+    systemChat LELSTRING(Common,VehicleInCombat);
 };
 
 systemChat LLSTRING(RearmInterrupted);

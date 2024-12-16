@@ -1,10 +1,10 @@
-#include "..\script_component.hpp"
+#include "script_component.hpp"
 /*
  * Author: 3Mydlo3
- * 
+ *
  *
  * Arguments:
- * 
+ *
  *
  * Return Value:
  * None
@@ -23,7 +23,7 @@ _markerName setMarkerSizeLocal [0.7, 0.7];
 
 private _markerType = _vehicle getVariable ["MDL_markerType", ""];
 if (_markerType isEqualTo "") then {
-    _markerType = [_vehicle, "markerType"] call FUNC(getVehicleInfo);
+    _markerType = [_vehicle, "markerType"] call EFUNC(common,getVehicleInfo);
     _vehicle setVariable ["MDL_markerType", _markerType];
 };
 _markerName setMarkerTypeLocal _markerType;

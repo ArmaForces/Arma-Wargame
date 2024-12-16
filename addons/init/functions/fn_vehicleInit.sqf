@@ -1,4 +1,4 @@
-#include "..\script_component.hpp"
+#include "script_component.hpp"
 /*
  * Author: 3Mydlo3
  * Initializes vehicles to work with custom damage model.
@@ -26,7 +26,7 @@ if (_vehicleHitpoints isEqualTo objNull) then {
 } else {
     diag_log format ["WARGAY DEBUG Hitpoints %1", str _vehicleHitpoints];
 };
-    
+
 _entity setVariable ["MDL_currentHp", _vehicleHitpoints];
 _entity setVariable ["MDL_maxHp", _vehicleHitpoints];
 

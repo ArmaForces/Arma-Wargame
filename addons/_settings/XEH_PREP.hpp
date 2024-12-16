@@ -1,2 +1,0 @@
-PREP(initClientSettings);
-PREP(initGlobalSettings);

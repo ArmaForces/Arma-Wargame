@@ -13,5 +13,17 @@
             <English>Controls whether this component is active.</English>
             <Polish>Pozwala kontrolować czy komponent jest włączony.</Polish>
         </Key>
+        <Key ID="STR_AFWG_Music_DamageAlarmEnabled">
+            <English>Damage alarm</English>
+            <Polish>Alarm o uszkodzeniach</Polish>
+        </Key>
+        <Key ID="STR_AFWG_Music_DamageAlarmEnabled_Description">
+            <English>Audible alarm when your vehicle gets damaged.</English>
+            <Polish>Alarm dźwiękowy gdy Twój pojazd zostanie uszkodzony.</Polish>
+        </Key>
+        <Key ID="STR_AFWG_Music_DamageReceived">
+            <English>Damage received</English>
+            <Polish>Otrzymano uszkodzenia</Polish>
+        </Key>
     </Package>
 </Project>

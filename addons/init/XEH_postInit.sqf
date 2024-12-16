@@ -137,5 +137,3 @@ if (GVAR(isTest)) then {
 };
 
 if (isServer) exitWith {};
-
-addMissionEventHandler ["Draw3D", FUNC(draw3D)];

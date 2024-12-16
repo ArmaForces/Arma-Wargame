@@ -1,4 +1,4 @@
-#include "..\script_component.hpp"
+#include "script_component.hpp"
 /*
  * Author: veteran29
  * Updates Wargay-like HP HUD display.

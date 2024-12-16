@@ -1,4 +1,4 @@
-#include "..\script_component.hpp"
+#include "script_component.hpp"
 /*
  * Author: 3Mydlo3
  * Initializes spawner for given vehicle.
@@ -22,7 +22,7 @@ _spawner addAction [
     {
         params ["_target", "_caller", "", "_arguments"];
 
-        ["MDL_deployVehicle", [_arguments select 0, _caller, _target]] call CBA_fnc_serverEvent;        
+        ["MDL_deployVehicle", [_arguments select 0, _caller, _target]] call CBA_fnc_serverEvent;
     },
     [_vehicleClass]
 ];

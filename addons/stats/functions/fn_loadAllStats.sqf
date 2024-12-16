@@ -1,5 +1,5 @@
 
-#include "..\script_component.hpp"
+#include "script_component.hpp"
 /*
  * Author: 3Mydlo3
  * Loads all stats from previous missions.

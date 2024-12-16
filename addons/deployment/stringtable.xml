@@ -25,5 +25,9 @@
             <English>Deployment of new '%1' vehicle is no longer possible.</English>
             <Polish>Rozmieszczenie nowych pojazdów '%1' już nie jest możliwe.</Polish>
         </Key>
+        <Key ID="STR_AFWG_Deployment_UnitLost">
+            <English>Lost %1 %2</English>
+            <Polish>Utracono %1 %2</Polish>
+        </Key>
     </Package>
 </Project>

@@ -1,4 +1,4 @@
-#include "..\script_component.hpp"
+#include "script_component.hpp"
 /*
  * Author: 3Mydlo3, veteran29
  * Draws 3D icon above given unit.
@@ -18,7 +18,7 @@
 params ["_target", ["_includeText", false]];
 
 if (!alive _target || {_target getVariable ["MDL_currentHp", 0] isEqualTo 0}) exitWith {};
-   
+
 private _worldPos = _target modelToWorldVisual ABOVE_UNIT;
 
 private _screenPosition = worldToScreen _worldPos;

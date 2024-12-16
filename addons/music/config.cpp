@@ -15,5 +15,6 @@ class CfgPatches {
 };
 
 #include "CfgEventHandlers.hpp"
+#include "CfgSounds.hpp"
 // TODO: Add wargay music oggs
 // TOOD: Add Wargay alarm sound
