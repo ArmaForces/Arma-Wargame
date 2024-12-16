@@ -26,6 +26,45 @@
 ] call CBA_fnc_addSetting;
 
 GVAR(iconWidth) = getNumber (configFile >> "CfgInGameUI" >> "Cursor" >> "activeWidth");
-GVAR(westIconColor) = getArray (missionConfigFile >> "CfgWargay" >> "westMarkerColor");
-GVAR(westAiIconColor) = getArray (missionConfigFile >> "CfgWargay" >> "westAiMarkerColor");
-GVAR(eastIconColor) = getArray (missionConfigFile >> "CfgWargay" >> "eastMarkerColor");
+// GVAR(westIconColor) = getArray (missionConfigFile >> "CfgWargay" >> "westMarkerColor");
+// GVAR(westAiIconColor) = getArray (missionConfigFile >> "CfgWargay" >> "westAiMarkerColor");
+// GVAR(eastIconColor) = getArray (missionConfigFile >> "CfgWargay" >> "eastMarkerColor");
+
+[
+    QGVAR(westIconColor),
+    "COLOR",
+    ["-test color-",    "-tooltip-"],
+    "My Category",
+    [
+        96/255,
+        159/255,
+        197/255,
+        0.85
+    ]
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(westAiIconColor),
+    "COLOR",
+    ["-test color-",    "-tooltip-"],
+    "My Category",
+    [
+        29/255,
+        197/255,
+        46/255,
+        0.85
+    ]
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(eastIconColor),
+    "COLOR",
+    ["-test color-",    "-tooltip-"],
+    "My Category",
+    [
+        192/255,
+        29/255,
+        46/255,
+        0.85
+    ]
+] call CBA_fnc_addSetting;
