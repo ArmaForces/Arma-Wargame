@@ -33,7 +33,7 @@ private _messageParts = [
     lineBreak,
     format ["XP: %1", _currentXp],
     lineBreak,
-    format ["XP Total: %2", _totalXp],
+    format ["XP Total: %1", _totalXp],
     lineBreak,
     lineBreak,
     format ["Played missions: %1", _playedMissions],

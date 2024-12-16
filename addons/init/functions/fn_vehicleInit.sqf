@@ -22,7 +22,7 @@ private _vehicleHitpoints = [_entity, "hitpoints"] call FUNC(getVehicleInfo);
 if (_vehicleHitpoints isEqualTo objNull) then {
     private _defaultHitpoints = 10;
     _vehicleHitpoints = _defaultHitpoints;
-    diag_log format ["WARGAY WARNING Hitpoints not defined for %1. Setting default hitpoints %2", typeof _entity, _defaultHitpoints];
+    diag_log format ["WARGAY WARNING Hitpoints not defined for %1. Setting default hitpoints %2", typeOf _entity, _defaultHitpoints];
 } else {
     diag_log format ["WARGAY DEBUG Hitpoints %1", str _vehicleHitpoints];
 };
