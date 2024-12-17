@@ -1,1 +1,2 @@
+PREP(addDeployableVehicle);
 PREP(deployVehicle);

@@ -33,6 +33,7 @@ if (_vehicle isEqualTo objNull) exitWith {
     ["MDL_createVehicleFailed", [], _caller] call CBA_fnc_targetEvent;
 };
 
+// TODO: Provide number of remaining vehicles of given type
 ["MDL_vehicleDeployment", [_vehicleClassName, _caller, _vehicle]] call CBA_fnc_globalEvent;
 
 private _newRemainingSpawns = _remainingSpawns - 1;

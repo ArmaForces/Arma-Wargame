@@ -16,5 +16,5 @@
 #endif
 
 // Global DEBUG
-#define DEV_DEBUG
-#define DEBUG_MODE_FULL
+// #define DEV_DEBUG
+// #define DEBUG_MODE_FULL
