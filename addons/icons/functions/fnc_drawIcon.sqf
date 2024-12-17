@@ -34,10 +34,6 @@ private _effectiveCommander = effectiveCommander _target;
 private _sideColor = if (side _effectiveCommander isEqualTo WEST) then {
     [GVAR(westAiIconColor), GVAR(westIconColor)] select isPlayer _effectiveCommander
 } else { GVAR(eastIconColor) };
-// #ifdef DEV_DEBUG
-// private _icon3DParams = [_iconPath, [_sideColor, [1,1,1,1]], _worldPos, _iconSize, _iconHeight, 0, _iconDescription, 0, 0.02, "EtelkaMonospacePro"];
-// diag_log format ["WARGAY DEBUG ICON3D [%1]: Params: %2", diag_tickTime, str _icon3DParams];
-// #endif
 
 if (GVAR(unitIconSizeDependsOnDistance)) then {
     // BUG: Distance should be from camera?
@@ -46,6 +42,8 @@ if (GVAR(unitIconSizeDependsOnDistance)) then {
     // private _factor = 2 min (1 max ((_distance - 300) * 0.0014));
     _iconSize = _iconSize * _factor;
 };
+
+TRACE_6("drawIcon3D",_iconPath,_sideColor,_worldPos,_iconSize,_iconDescription,_includeText);
 
 drawIcon3D [
     _iconPath,

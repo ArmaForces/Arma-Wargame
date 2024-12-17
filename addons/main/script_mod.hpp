@@ -14,3 +14,7 @@
 #else
     #define COMPONENT_NAME QUOTE(AFWG - COMPONENT)
 #endif
+
+// Global DEBUG
+#define DEV_DEBUG
+#define DEBUG_MODE_FULL

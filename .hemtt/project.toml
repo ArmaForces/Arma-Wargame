@@ -19,12 +19,6 @@ author = "ArmaForces"
 [version]
 path = "addons/main/script_version.hpp"
 
-# Unused in HEMTT v1.11 or higher, kept for backwards compatibility
-[asc]
-exclude = [
-    ".inc.sqf",
-]
-
 [hemtt.launch.default]
 workshop = [
     "450814997", # CBA_A3
@@ -32,7 +26,6 @@ workshop = [
 ]
 parameters = [
     "-name=dev",
-    "-window",
 ]
 
 [hemtt.launch.ace]
@@ -40,9 +33,6 @@ extends = "default"
 workshop = [
     "463939057", # ACE
 #    "766491311", # KKA3 ACE Extension
-]
-parameters = [
-    "-name=dev",
 ]
 
 [hemtt.launch.cup]

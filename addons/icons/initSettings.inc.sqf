@@ -1,4 +1,13 @@
 [
+    QGVAR(unitIconMode),
+    "LIST",
+    ["Unit icon mode", ""],
+    [LSTRING(Icons_DisplayName), LSTRING(UnitIcons)],
+    [[0, 1], ["All", "Enemy only"]],
+    true
+] call CBA_fnc_addSetting;
+
+[
     QGVAR(unitIconSizeDependsOnDistance),
     "CHECKBOX",
     [LSTRING(UnitIconSizeDependsOnDistance), LSTRING(UnitIconSizeDependsOnDistance_Description)],

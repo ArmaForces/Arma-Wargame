@@ -28,7 +28,7 @@ private _target = _targetsToCheck deleteAt (count _targetsToCheck - 1);
 diag_log format ["WARGAY DEBUG VISIBILITY CHECK [%1]: Checking Target %2", diag_tickTime, _target];
 #endif
 
-private _shouldBeVisible = [_target] call FUNC(shouldStillBeVisible);
+private _shouldBeVisible = [_target] call EFUNC(common,shouldStillBeVisible);
 private _isVisible = _target getVariable ["MDL_IsVisible", false];
 if (_isVisible && {!_shouldBeVisible}) then {
     #ifdef DEV_DEBUG

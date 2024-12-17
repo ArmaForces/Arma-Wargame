@@ -1,6 +1,7 @@
 #include "script_component.hpp"
 
-if (isServer) exitWith {};
+if (isServer) then { call COMPILE_SCRIPT(XEH_postInitServer) };
+if (!hasInterface) exitWith {};
 
 // TODO: Automatic queue of Wargame tracks if proper mod is loaded
 

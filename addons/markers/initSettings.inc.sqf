@@ -1,13 +1,4 @@
 [
-    QGVAR(unitIconMode),
-    "LIST",
-    ["Unit icon mode", ""],
-    [LSTRING(Markers_DisplayName), ELSTRING(icons,UnitIcons)],
-    [[0, 1], ["All", "Enemy only"]],
-    true
-] call CBA_fnc_addSetting;
-
-[
     QGVAR(enemyMarkersEnabled),
     "CHECKBOX",
     ["Enable map markers enemies", "If enabled, map markers will be show for spotted enemy units (icons might look different on map vs in-game)."],

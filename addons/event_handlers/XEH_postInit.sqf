@@ -9,6 +9,6 @@
     _x addEventHandler ["CuratorObjectDeleted", FUNC(curatorObjectDeleted)];
 } forEach allCurators;
 
-if (isServer) exitWith {};
+if (!hasInterface) exitWith {};
 
 addMissionEventHandler ["Draw3D", FUNC(draw3D)];

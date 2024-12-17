@@ -1,14 +1,12 @@
 #include "script_component.hpp"
 
-// TODO: Move whole init.sqf
-// TODO: Move whole initServer.sqf
 // TODO: Move onPlayerKilled.sqf
 // TODO: Move and split CfgWargay.hpp
 
 GVAR(isTest) = true;
 
 AmmoTypes = createHashMapFromArray
-    ("true" configClasses (missionConfigFile >> "CfgWargay" >> "Ammo")
+    ("true" configClasses (configFile >> "CfgWargay" >> "Ammo")
     apply {
         private _hashMap = createHashMap;
         _hashMap set [CLASS_NAME_PROPERTY, toUpper configName _x];
@@ -20,11 +18,12 @@ AmmoTypes = createHashMapFromArray
             _hashMap set ["child", _child];
         };
 
+        LOG_1("Configuration for ammo type %1 read from config",toUpper configName _x);
         [toUpper configName _x, _hashMap]
     });
 
 VehicleTypes = createHashMapFromArray
-    ("true" configClasses (missionConfigFile >> "CfgWargay" >> "Vehicles")
+    ("true" configClasses (configFile >> "CfgWargay" >> "Vehicles")
     apply {
         private _hashMap = createHashMap;
         _hashMap set [CLASS_NAME_PROPERTY, toUpper configName _x];
@@ -36,6 +35,7 @@ VehicleTypes = createHashMapFromArray
         _hashMap set ["isCommandVehicle", (_x >> "isCommandVehicle") call BIS_fnc_getCfgDataBool];
         _hashMap set ["isLogistics", (_x >> "isLogistics") call BIS_fnc_getCfgDataBool];
         _hashMap set ["isRecon", (_x >> "isRecon") call BIS_fnc_getCfgDataBool];
+        LOG_1("Configuration for vehicle type %1 read from config",toUpper configName _x);
         [toUpper configName _x, _hashMap]
     });
 
@@ -136,4 +136,13 @@ if (GVAR(isTest)) then {
     }] call CBA_fnc_execNextFrame;
 };
 
-if (isServer) exitWith {};
+if (isServer) then { call COMPILE_SCRIPT(XEH_postInitServer) };
+if (!hasInterface) exitWith {};
+
+player addMPEventHandler ["MPKilled", {
+    params ["_unit", "_killer", "_instigator", "_useEffects"];
+
+    private _vehicle = if (vehicle player isEqualTo player) then { objNull } else { vehicle player };
+
+    ["MDL_playerKilled", [getPlayerUID player, player, _vehicle]] call CBA_fnc_serverEvent;
+}];

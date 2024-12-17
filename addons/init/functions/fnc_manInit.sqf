@@ -15,4 +15,4 @@
 
 params ["_entity"];
 
-_entity addEventHandler ["HandleDamage", FUNC(handleDamageMan)];
+_entity addEventHandler ["HandleDamage", EFUNC(event_handlers,handleDamageMan)];

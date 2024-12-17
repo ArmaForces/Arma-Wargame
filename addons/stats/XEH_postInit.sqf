@@ -1,6 +1,7 @@
 #include "script_component.hpp"
 
-if (isServer) exitWith {};
+if (isServer) then { call COMPILE_SCRIPT(XEH_postInitServer) };
+if (!hasInterface) exitWith {};
 
 ["MDL_xpReceived", {
     params ["_receivedXp", "_newLifeXp", "_newTotalXp"];

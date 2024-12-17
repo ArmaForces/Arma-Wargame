@@ -1,6 +1,6 @@
 #include "script_component.hpp"
 
-if (isServer) exitWith {};
+if (!hasInterface) exitWith {};
 
 [FUNC(enemyMarkersLoop)] call afm_common_fnc_runAfterSettingsInit;
 

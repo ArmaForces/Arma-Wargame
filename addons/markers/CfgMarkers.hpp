@@ -1,3 +1,6 @@
+// TODO: Proper stringtable for marker names
+// TODO: Separate markerClass
+// TODO: Change marker classes to include mod prefix
 class CfgMarkers
 {
     class b_antiair_spaag_radar

@@ -1,6 +1,6 @@
 #include "script_component.hpp"
 
-if (isServer) exitWith {};
+if (!hasInterface) exitWith {};
 
 ["MDL_showCurrentHp", {
     if (vehicle player isEqualTo player) exitWith {};

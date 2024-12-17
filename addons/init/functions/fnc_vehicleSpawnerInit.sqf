@@ -15,7 +15,7 @@
 params ["_spawner"];
 
 private _vehicleClass = typeOf _spawner;
-private _vehicleName = [_spawner] call FUNC(getVehicleDisplayName);
+private _vehicleName = [_spawner] call EFUNC(common,getVehicleDisplayName);
 
 _spawner addAction [
     _vehicleName,

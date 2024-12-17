@@ -18,7 +18,7 @@ private _iconType = _vehicle getVariable ["MDL_iconPath", ""];
 
 if (_iconType isNotEqualTo "") exitWith { _iconType };
 
-private _vehicleInfo = [_vehicle] call FUNC(getVehicleInfo);
+private _vehicleInfo = [_vehicle] call EFUNC(common,getVehicleInfo);
 
 private _iconPath = _vehicleInfo getOrDefault [
     "iconPath",
