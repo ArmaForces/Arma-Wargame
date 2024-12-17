@@ -20,7 +20,7 @@
 
 // Icon macros
 #define ARMA_NATO_MARKERS_DIR \A3\ui_f\data\map\markers\nato
-#define WARGAY_NATO_MARKERS_DIR QPATHTOEF(markers,assets)
+#define WARGAY_NATO_MARKERS_DIR PATHTOEF(markers,assets)
 #define ANTIAIR_ICON QUOTE(ARMA_NATO_MARKERS_DIR\b_antiair.paa)
 #define ANTIAIR_SPAAG_ICON QUOTE(WARGAY_NATO_MARKERS_DIR\b_antiair_spaag.paa)
 #define ANTIAIR_SPAAG_RADAR_ICON QUOTE(WARGAY_NATO_MARKERS_DIR\b_antiair_spaag_radar.paa)
