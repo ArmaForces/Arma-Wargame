@@ -16,7 +16,7 @@ if (!hasInterface) exitWith {};
 
     private _vehicleInfo = VehicleTypes getOrDefault [toUpper _vehicleClassName, ""];
     private _vehicleName = if (_vehicleInfo isNotEqualTo "") then {
-        [_vehicleInfo] call FUNC(getVehicleDisplayName)
+        [_vehicleInfo] call EFUNC(common,getVehicleDisplayName)
     } else {
         _vehicleClassName
     };
@@ -28,7 +28,7 @@ if (!hasInterface) exitWith {};
     params ["_vehicleClassName"];
     private _vehicleInfo = VehicleTypes getOrDefault [toUpper _vehicleClassName, ""];
     private _vehicleName = if (_vehicleInfo isNotEqualTo "") then {
-        [_vehicleInfo] call FUNC(getVehicleDisplayName)
+        [_vehicleInfo] call EFUNC(common,getVehicleDisplayName)
     } else {
         _vehicleClassName
     };
@@ -36,10 +36,9 @@ if (!hasInterface) exitWith {};
     [WEST, "HQ"] sideChat format [LLSTRING(DeploymentOfVehicleNoLongerPossible), _vehicleName];
 }] call CBA_fnc_addEventHandler;
 
-// TODO: Consider where to put this event
 ["MDL_unitLost", {
     params ["_unit"];
-    private _vehicleDisplayName = [_unit] call FUNC(getVehicleDisplayName);
+    private _vehicleDisplayName = [_unit] call EFUNC(common,getVehicleDisplayName);
     private _crew = crew _unit;
     private _crewNames = if (_crew isEqualTo []) then {
         ""

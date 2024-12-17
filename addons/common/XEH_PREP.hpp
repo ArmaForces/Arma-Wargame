@@ -1,5 +1,4 @@
 PREP(createVehicleInfoForNonConfiguredVehicle);
-PREP(currentHpString);
 PREP(getAmmoInfo);
 PREP(getGroupVehicles);
 PREP(getVehicleDisplayName);

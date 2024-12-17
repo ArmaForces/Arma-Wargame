@@ -43,6 +43,7 @@
 #define RECON_ARMOR_ICON QUOTE(WARGAY_NATO_MARKERS_DIR\b_recon_armor.paa)
 #define RECON_ICON QUOTE(WARGAY_NATO_MARKERS_DIR\b_recon.paa)
 
+// Split it somehow
 class CfgWargay
 {
     // westMarkerColor[] = {

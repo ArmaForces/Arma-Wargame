@@ -1,8 +1,5 @@
 #include "script_component.hpp"
 
-// TODO: Move onPlayerKilled.sqf
-// TODO: Move and split CfgWargay.hpp
-
 GVAR(isTest) = true;
 
 AmmoTypes = createHashMapFromArray

@@ -21,4 +21,4 @@ params ["_displayOrControl", "_key", "_shift", "_ctrl", "_alt"];
 private _cursorTarget = cursorTarget;
 if (_cursorTarget isEqualTo objNull) exitWith {};
 
-[_cursorTarget] call EFUNC(common,showUnitInfo);
+[_cursorTarget] call FUNC(showUnitInfo);

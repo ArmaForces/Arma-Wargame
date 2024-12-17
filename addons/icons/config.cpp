@@ -7,7 +7,8 @@ class CfgPatches {
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
-            "afwg_main"
+            "afwg_common",
+            "afwg_hud"
         };
         author = "ArmaForces";
         VERSION_CONFIG;
@@ -15,4 +16,3 @@ class CfgPatches {
 };
 
 #include "CfgEventHandlers.hpp"
-// TODO: Add unit icons/markers
