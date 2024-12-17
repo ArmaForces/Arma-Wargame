@@ -4,8 +4,8 @@
 [
     QGVAR(filledHpColor),
     "COLOR",
-    ["-test color-",    "-tooltip-"],
-    "My Category",
+    ["HP color", "Color used for full HP boxes in HUD"],
+    [LSTRING(DisplayName)],
     [
         117/255,
         1,
@@ -17,8 +17,8 @@
 [
     QGVAR(missingHpColor),
     "COLOR",
-    ["-test color-",    "-tooltip-"],
-    "My Category",
+    ["Missing HP color", "Color used for missing HP boxes in HUD"],
+    [LSTRING(DisplayName)],
     [
         117/255,
         117/255,
