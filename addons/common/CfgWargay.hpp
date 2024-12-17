@@ -15,7 +15,7 @@
 #define VEHICLE_LIKE(otherVehicleClass,vehicleClass) class vehicleClass : otherVehicleClass {}
 #define HAS_PENETRATOR(penetratorClass) NO_DAMAGE \
         { \
-            child = penetratorClass;\
+            child = QUOTE(penetratorClass);\
         }
 
 // Icon macros
