@@ -19,30 +19,29 @@
         }
 
 // Icon macros
-// TODO: Adjust paths for mod-based icons
 #define ARMA_NATO_MARKERS_DIR \A3\ui_f\data\map\markers\nato
+#define WARGAY_NATO_MARKERS_DIR QPATHTOEF(markers,assets)
 #define ANTIAIR_ICON QUOTE(ARMA_NATO_MARKERS_DIR\b_antiair.paa)
-#define ANTIAIR_SPAAG_ICON __EVAL(getMissionPath "gui\markers\b_antiair_spaag.paa")
-#define ANTIAIR_SPAAG_RADAR_ICON __EVAL(getMissionPath "gui\markers\b_antiair_spaag_radar.paa")
-#define ANTITANK_ICON __EVAL(getMissionPath "gui\markers\b_antitank.paa")
-#define ANTITANK_ARMOR_ICON __EVAL(getMissionPath "gui\markers\b_antitank_armor.paa")
+#define ANTIAIR_SPAAG_ICON QUOTE(WARGAY_NATO_MARKERS_DIR\b_antiair_spaag.paa)
+#define ANTIAIR_SPAAG_RADAR_ICON QUOTE(WARGAY_NATO_MARKERS_DIR\b_antiair_spaag_radar.paa)
+#define ANTITANK_ICON QUOTE(WARGAY_NATO_MARKERS_DIR\b_antitank.paa)
+#define ANTITANK_ARMOR_ICON QUOTE(WARGAY_NATO_MARKERS_DIR\b_antitank_armor.paa)
 #define ART_ICON QUOTE(ARMA_NATO_MARKERS_DIR\b_art.paa)
-#define ART_ROCKET_ICON __EVAL(getMissionPath "gui\markers\b_art_rocket.paa")
+#define ART_ROCKET_ICON QUOTE(WARGAY_NATO_MARKERS_DIR\b_art_rocket.paa)
 #define ARMOR_ICON QUOTE(ARMA_NATO_MARKERS_DIR\b_armor.paa)
-#define CV_ARMOR_ICON __EVAL(getMissionPath "gui\markers\b_cv_armor.paa")
-#define CV_ICON __EVAL(getMissionPath "gui\markers\b_cv.paa")
+#define CV_ARMOR_ICON QUOTE(WARGAY_NATO_MARKERS_DIR\b_cv_armor.paa)
+#define CV_ICON QUOTE(WARGAY_NATO_MARKERS_DIR\b_cv.paa)
 #define HELI_ICON QUOTE(ARMA_NATO_MARKERS_DIR\b_air.paa)
 #define LOG_ARMOR_ICON QUOTE(ARMA_NATO_MARKERS_DIR\b_support.paa)
 #define LOG_ICON QUOTE(ARMA_NATO_MARKERS_DIR\b_support.paa)
 #define MECH_INF_ICON QUOTE(ARMA_NATO_MARKERS_DIR\b_mech_inf.paa)
-#define MECH_INF_ARMED_ICON __EVAL(getMissionPath "gui\markers\b_mech_inf_armed.paa")
+#define MECH_INF_ARMED_ICON QUOTE(WARGAY_NATO_MARKERS_DIR\b_mech_inf_armed.paa)
 #define MOTOR_INF_ICON QUOTE(ARMA_NATO_MARKERS_DIR\b_motor_inf.paa)
 #define PLANE_ICON QUOTE(ARMA_NATO_MARKERS_DIR\b_air.paa)
-#define RECON_AIR_ICON __EVAL(getMissionPath "gui\markers\b_recon_air.paa")
-#define RECON_ANTITANK_ICON __EVAL(getMissionPath "gui\markers\b_recon_antitank.paa")
-#define RECON_ARMOR_ICON __EVAL(getMissionPath "gui\markers\b_recon_armor.paa")
-#define RECON_ICON __EVAL(getMissionPath "gui\markers\b_recon.paa")
-// TODO: Add missing icons
+#define RECON_AIR_ICON QUOTE(WARGAY_NATO_MARKERS_DIR\b_recon_air.paa)
+#define RECON_ANTITANK_ICON QUOTE(WARGAY_NATO_MARKERS_DIR\b_recon_antitank.paa)
+#define RECON_ARMOR_ICON QUOTE(WARGAY_NATO_MARKERS_DIR\b_recon_armor.paa)
+#define RECON_ICON QUOTE(WARGAY_NATO_MARKERS_DIR\b_recon.paa)
 
 class CfgWargay
 {
@@ -175,7 +174,7 @@ class CfgWargay
             damage = 13;
             type = "AP";
         };
-        // class CUP_Sh_105mm_M456A2 : HAS_PENETRATOR(CUP_P_105mm_M393A3);
+        class CUP_Sh_105mm_M456A2 : HAS_PENETRATOR(CUP_P_105mm_M393A3);
         class CUP_P_105mm_M393A3
         {
             damage = 13;
@@ -197,14 +196,14 @@ class CfgWargay
             Western Germany
         */
         // LARS-2
-        // class gm_rocket_mlrs_110mm_he_dm21 : HAS_PENETRATOR(gm_warhead_mlrs_110mm_he_dm21);
+        class gm_rocket_mlrs_110mm_he_dm21 : HAS_PENETRATOR(gm_warhead_mlrs_110mm_he_dm21);
         class gm_warhead_mlrs_110mm_he_dm21
         {
             damage = 7;
             type = "HE";
         };
 
-        // class gm_rocket_mlrs_110mm_icm_dm602 : HAS_PENETRATOR(gm_penetrator_m77);
+        class gm_rocket_mlrs_110mm_icm_dm602 : HAS_PENETRATOR(gm_penetrator_m77);
         class gm_penetrator_m77
         {
             damage = 6;
@@ -212,14 +211,14 @@ class CfgWargay
         };
 
         // M-109G
-        // class gm_shell_155mm_he_dm21 : HAS_PENETRATOR(gm_warhead_155mm_he_dm21);
+        class gm_shell_155mm_he_dm21 : HAS_PENETRATOR(gm_warhead_155mm_he_dm21);
         class gm_warhead_155mm_he_dm21
         {
             damage = 7;
             type = "HE";
         };
 
-        // class gm_shell_155mm_icm_602 : HAS_PENETRATOR(gm_warhead_155mm_icm_602);
+        class gm_shell_155mm_icm_602 : HAS_PENETRATOR(gm_warhead_155mm_icm_602);
         class gm_warhead_155mm_icm_602
         {
             damage = 6;
@@ -245,7 +244,7 @@ class CfgWargay
             type = "AP";
         };
 
-        // class gm_shell_105x617mm_heat_mp_t_dm12 : HAS_PENETRATOR(gm_penetrator_105x617mm_heat_dm12);
+        class gm_shell_105x617mm_heat_mp_t_dm12 : HAS_PENETRATOR(gm_penetrator_105x617mm_heat_dm12);
         class gm_penetrator_105x617mm_heat_dm12
         {
             damage = 11;
@@ -269,7 +268,7 @@ class CfgWargay
         };
 
         // Milan
-        // class gm_missile_milan_heat_dm92 : HAS_PENETRATOR(gm_penetrator_milan_HEAT_dm92);
+        class gm_missile_milan_heat_dm92 : HAS_PENETRATOR(gm_penetrator_milan_HEAT_dm92);
         class gm_penetrator_milan_HEAT_dm82
         {
             damage = 17;
@@ -278,8 +277,8 @@ class CfgWargay
         class gm_penetrator_milan_HEAT_dm92 : gm_penetrator_milan_HEAT_dm82 {};
 
         // Hot 1 & 2
-        // class gm_missile_hot_heat_dm72 : HAS_PENETRATOR(gm_penetrator_hot_HEAT_dm72);
-        // class gm_missile_hot_heat_dm102 : HAS_PENETRATOR(gm_penetrator_hot_HEAT_dm102);
+        class gm_missile_hot_heat_dm72 : HAS_PENETRATOR(gm_penetrator_hot_HEAT_dm72);
+        class gm_missile_hot_heat_dm102 : HAS_PENETRATOR(gm_penetrator_hot_HEAT_dm102);
         class gm_penetrator_hot_HEAT_dm72
         {
             damage = 22;
@@ -292,7 +291,7 @@ class CfgWargay
         };
 
         // PzF 44
-        // class gm_rocket_44x537mm_HEAT_dm32 : HAS_PENETRATOR(gm_penetrator_44x537mm_HEAT_dm32);
+        class gm_rocket_44x537mm_HEAT_dm32 : HAS_PENETRATOR(gm_penetrator_44x537mm_HEAT_dm32);
         class gm_penetrator_44x537mm_HEAT_dm32
         {
             damage = 16;
@@ -300,9 +299,9 @@ class CfgWargay
         };
 
         // PzF 3
-        // class gm_rocket_60mm_HEAT_dm12 : HAS_PENETRATOR(gm_penetrator_60mm_HEAT_dm12);
-        // class gm_rocket_60mm_HEAT_dm22 : HAS_PENETRATOR(gm_penetrator_60mm_HEAT_dm22);
-        // class gm_rocket_60mm_HEAT_dm32 : HAS_PENETRATOR(gm_penetrator_60mm_HEAT_dm32);
+        class gm_rocket_60mm_HEAT_dm12 : HAS_PENETRATOR(gm_penetrator_60mm_HEAT_dm12);
+        class gm_rocket_60mm_HEAT_dm22 : HAS_PENETRATOR(gm_penetrator_60mm_HEAT_dm22);
+        class gm_rocket_60mm_HEAT_dm32 : HAS_PENETRATOR(gm_penetrator_60mm_HEAT_dm32);
         class gm_penetrator_60mm_HEAT_dm12
         {
             damage = 24;
@@ -318,10 +317,10 @@ class CfgWargay
         };
 
         // PzF 84 (Carl Gustav M2)
-        // class gm_rocket_84x245mm_HEAT_T_DM12 : HAS_PENETRATOR(gm_penetrator_84x245mm_HEAT_DM12);
-        // class gm_rocket_84x245mm_HEAT_T_DM12A1 : HAS_PENETRATOR(gm_penetrator_84x245mm_HEAT_DM12A1);
-        // class gm_rocket_84x245mm_HEAT_T_DM22 : HAS_PENETRATOR(gm_penetrator_84x245mm_HEAT_DM22);
-        // class gm_rocket_84x245mm_HEAT_T_DM32 : HAS_PENETRATOR(gm_penetrator_84x245mm_HEAT_DM32);
+        class gm_rocket_84x245mm_HEAT_T_DM12 : HAS_PENETRATOR(gm_penetrator_84x245mm_HEAT_DM12);
+        class gm_rocket_84x245mm_HEAT_T_DM12A1 : HAS_PENETRATOR(gm_penetrator_84x245mm_HEAT_DM12A1);
+        class gm_rocket_84x245mm_HEAT_T_DM22 : HAS_PENETRATOR(gm_penetrator_84x245mm_HEAT_DM22);
+        class gm_rocket_84x245mm_HEAT_T_DM32 : HAS_PENETRATOR(gm_penetrator_84x245mm_HEAT_DM32);
 
         class gm_penetrator_84x245mm_HEAT_DM12
         {
@@ -339,7 +338,7 @@ class CfgWargay
         };
 
         // M72A3 LAW
-        // class gm_rocket_66mm_HEAT_m72a3 : HAS_PENETRATOR(gm_penetrator_66mm_HEAT_m72a3);
+        class gm_rocket_66mm_HEAT_m72a3 : HAS_PENETRATOR(gm_penetrator_66mm_HEAT_m72a3);
 
         class gm_penetrator_66mm_HEAT_m72a3
         {
@@ -381,7 +380,7 @@ class CfgWargay
         class gm_shell_100x695mm_he_of412 : Tank_HE {};
 
         // T-55A
-        // class gm_shell_100x695mm_heat_t_bk5m : HAS_PENETRATOR(gm_penetrator_100x695mm_HEAT_T_bk5m);
+        class gm_shell_100x695mm_heat_t_bk5m : HAS_PENETRATOR(gm_penetrator_100x695mm_HEAT_T_bk5m);
         class gm_penetrator_100x695mm_HEAT_T_bk5m
         {
             damage = 11;
@@ -406,14 +405,14 @@ class CfgWargay
         class gm_bullet_23x152mm_api_t_bzt : gm_bullet_23x152mm_hei_t_ofzt {};
 
         // SFL 2S1
-        // class gm_shell_122x447mm_he_of462 : HAS_PENETRATOR(gm_warhead_122x447mm_he_of462);
+        class gm_shell_122x447mm_he_of462 : HAS_PENETRATOR(gm_warhead_122x447mm_he_of462);
         class gm_warhead_122x447mm_he_of462
         {
             damage = 6;
             type = "HE";
         };
 
-        // class gm_shell_122x447mm_heat_t_bk13 : HAS_PENETRATOR(gm_penetrator_122x447mm_heat_t_bk13);
+        class gm_shell_122x447mm_heat_t_bk13 : HAS_PENETRATOR(gm_penetrator_122x447mm_heat_t_bk13);
         class gm_penetrator_122x447mm_heat_bk6m
         {
             damage = 9;
@@ -422,14 +421,14 @@ class CfgWargay
         class gm_penetrator_122x447mm_heat_t_bk13 : gm_penetrator_122x447mm_heat_bk6m {};
 
         // BM-21
-        // class gm_rocket_mlrs_122mm_he_9m22u : HAS_PENETRATOR(gm_warhead_122mm_he_9m22u);
+        class gm_rocket_mlrs_122mm_he_9m22u : HAS_PENETRATOR(gm_warhead_122mm_he_9m22u);
         class gm_warhead_122mm_he_9m22u
         {
             damage = 7;
             type = "HE";
         };
 
-        // class gm_rocket_mlrs_122mm_icm_9m218 : HAS_PENETRATOR(gm_penetrator_3b30);
+        class gm_rocket_mlrs_122mm_icm_9m218 : HAS_PENETRATOR(gm_penetrator_3b30);
         class gm_penetrator_3b30
         {
             damage = 5;
@@ -451,7 +450,7 @@ class CfgWargay
         };
         class gm_shell_73mm_he_og15v : Small_HE {};
 
-        // class gm_missile_maljutka_heat_9m14m : HAS_PENETRATOR(gm_penetrator_maljutka_HEAT_9m14m);
+        class gm_missile_maljutka_heat_9m14m : HAS_PENETRATOR(gm_penetrator_maljutka_HEAT_9m14m);
         class gm_penetrator_maljutka_HEAT_9m14
         {
             damage = 15;
@@ -464,7 +463,7 @@ class CfgWargay
         class gm_bullet_145x114mm_HEI_T_MDZ : HMG_HE {};
 
         // Fagot
-        // class gm_missile_fagot_heat_9m111 : HAS_PENETRATOR(gm_penetrator_fagot_HEAT_9m111);
+        class gm_missile_fagot_heat_9m111 : HAS_PENETRATOR(gm_penetrator_fagot_HEAT_9m111);
         class gm_penetrator_fagot_HEAT_9m111
         {
             damage = 16;
@@ -472,14 +471,14 @@ class CfgWargay
         };
 
 
-        // class gm_rocket_40mm_HEAT_pg7v : HAS_PENETRATOR(gm_penetrator_40mm_HEAT_pg7v);
+        class gm_rocket_40mm_HEAT_pg7v : HAS_PENETRATOR(gm_penetrator_40mm_HEAT_pg7v);
         class gm_penetrator_40mm_HEAT_pg7v
         {
             damage = 14;
             type = "HEAT";
         };
 
-        // class gm_rocket_40mm_HEAT_pg7v1 : HAS_PENETRATOR(gm_penetrator_40mm_HEAT_pg7v1);
+        class gm_rocket_40mm_HEAT_pg7v1 : HAS_PENETRATOR(gm_penetrator_40mm_HEAT_pg7v1);
         class gm_penetrator_40mm_HEAT_pg7v1
         {
             damage = 17;
@@ -492,14 +491,14 @@ class CfgWargay
             type = "HE";
         };
 
-        // class gm_rocket_55mm_heat_s5k : HAS_PENETRATOR(gm_penetrator_55mm_heat_s5k);
+        class gm_rocket_55mm_heat_s5k : HAS_PENETRATOR(gm_penetrator_55mm_heat_s5k);
         class gm_penetrator_55mm_heat_s5k
         {
             damage = 2;
             type = "HEAT";
         };
 
-        // class gm_rocket_64mm_HEAT_pg18 : HAS_PENETRATOR(gm_penetrator_64mm_HEAT_pg18);
+        class gm_rocket_64mm_HEAT_pg18 : HAS_PENETRATOR(gm_penetrator_64mm_HEAT_pg18);
         class gm_penetrator_64mm_HEAT_pg18
         {
             damage = 15;
