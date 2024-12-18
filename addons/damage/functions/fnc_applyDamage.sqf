@@ -24,7 +24,7 @@ if (_newHp <= 0) exitWith {
     // Add experience for players first
     if (isPlayer _shooter) then {
         if ([side _shooter, side _unit] call BIS_fnc_sideIsEnemy) then {
-            [_shooter, _unit] call FUNC(addExperienceForKill);
+            [_shooter, _unit] call EFUNC(stats,addExperienceForKill);
         } else {
             // TODO: Handle friendly-fire
             // TODO: Consider removing XP for damaging friendly units too
