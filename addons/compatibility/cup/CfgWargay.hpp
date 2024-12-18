@@ -1,18 +1,3 @@
-#define ARMOR(FRONT,SIDES,BACK,TOP) armor[] = { FRONT, SIDES, BACK, TOP }
-#define VEHICLE_LIKE(otherVehicleClass,vehicleClass) class vehicleClass : otherVehicleClass {}
-#define HAS_PENETRATOR(penetratorClass) NO_DAMAGE \
-        { \
-            child = QUOTE(penetratorClass);\
-        }
-
-#define ARMA_NATO_MARKERS_DIR \A3\ui_f\data\map\markers\nato
-#define WARGAY_NATO_MARKERS_DIR PATHTOEF(markers,assets)
-#define ANTIAIR_SPAAG_RADAR_ICON QUOTE(WARGAY_NATO_MARKERS_DIR\b_antiair_spaag_radar.paa)
-#define ANTITANK_ICON QUOTE(WARGAY_NATO_MARKERS_DIR\b_antitank.paa)
-#define ARMOR_ICON QUOTE(ARMA_NATO_MARKERS_DIR\b_armor.paa)
-#define CV_ARMOR_ICON QUOTE(WARGAY_NATO_MARKERS_DIR\b_cv_armor.paa)
-#define HELI_ICON QUOTE(ARMA_NATO_MARKERS_DIR\b_air.paa)
-
 class CfgWargay
 {
     class Ammo

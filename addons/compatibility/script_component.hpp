@@ -12,3 +12,4 @@
 #endif
 
 #include "\z\afwg\addons\main\script_macros.hpp"
+#include "\z\afwg\addons\compatibility\script_macros.hpp"

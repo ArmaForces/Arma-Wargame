@@ -1,16 +1,3 @@
-#define ARMOR(FRONT,SIDES,BACK,TOP) armor[] = { FRONT, SIDES, BACK, TOP }
-#define VEHICLE_LIKE(otherVehicleClass,vehicleClass) class vehicleClass : otherVehicleClass {}
-#define HAS_PENETRATOR(penetratorClass) NO_DAMAGE \
-        { \
-            child = QUOTE(penetratorClass);\
-        }
-
-#define ARMA_NATO_MARKERS_DIR \A3\ui_f\data\map\markers\nato
-#define WARGAY_NATO_MARKERS_DIR PATHTOEF(markers,assets)
-#define ANTITANK_ICON QUOTE(WARGAY_NATO_MARKERS_DIR\b_antitank.paa)
-#define ARMOR_ICON QUOTE(ARMA_NATO_MARKERS_DIR\b_armor.paa)
-#define RECON_ARMOR_ICON QUOTE(WARGAY_NATO_MARKERS_DIR\b_recon_armor.paa)
-
 class CfgWargay
 {
     // Mod uses vanilla ammo, so it might be incompatible in some scenarios
