@@ -1,8 +1,5 @@
 #include "script_component.hpp"
 
-// Can be initialized using FUNC(addDeployableVehicle)
-GVAR(spawnableVehicles) = createHashMap;
-
 if (isServer) then { call COMPILE_SCRIPT(XEH_postInitServer) };
 if (!hasInterface) exitWith {};
 
