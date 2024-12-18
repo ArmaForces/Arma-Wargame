@@ -39,6 +39,7 @@ if (_ammoInfo isEqualTo []) then {
     if (_isSmallArms) then {
         private _hashMap = AmmoTypes get "SMALL_ARMS";
         AmmoTypes set [toUpper _ammoClassName, _hashMap];
+        _ammoInfo = _hashMap;
     };
 };
 if (_ammoInfo isEqualTo []) exitWith {
@@ -70,19 +71,15 @@ private _damage = switch (_ammoType) do {
 };
 
 if (_isUnknownAmmoType) exitWith {
-    #ifdef DEV_DEBUG
-    private _infoMsg = format ["Unknown ammunition type '%1' used, ignoring calculations",_ammoType];
+    private _infoMsg = format ["Unknown ammunition '%1' used, ignoring calculations",_ammoClassName];
     systemChat _infoMsg;
-    diag_log _infoMsg;
-    #endif
+    WARNING(_infoMsg);
 };
 
 if (GVAR(showDamageFeedback)) then {
     private _infoMsg = format ["Potential damage: %1 %2, Hit armor: %3 %4, Actual damage: %5", _ammoDamage, _ammoType, _hitDir, _armor, _damage];
     systemChat _infoMsg;
-    #ifdef DEV_DEBUG
-    diag_log _infoMsg;
-    #endif
+    LOG(_infoMsg);
 };
 
 #ifdef DEV_DEBUG

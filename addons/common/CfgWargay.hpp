@@ -152,6 +152,16 @@ class CfgWargay
         };
 
         /*
+            Vanilla
+        */
+        class SatchelCharge_Remote_Ammo : ACE_ammoExplosionLarge {};
+
+        /*
+            CUP
+        */
+        class G_40mm_HE : ace_frag_small {};
+
+        /*
             USA
         */
         class CUP_R_70mm_Hydra_HE
