@@ -28,12 +28,12 @@ private _ammoInfo = _vehicleInfo getOrDefault [AMMO_PROPERTY, objNull];
 if (_ammoInfo isEqualTo objNull) then {
     private _vehicleClassName = _vehicleInfo get CLASS_NAME_PROPERTY;
 
-    // diag_log format ["DDd %1", _vehicleClassName];
+    LOG_1("Searching ammo info for %1",_vehicleClassName);
 
     private _magazines = getArray (configFile >> "CfgVehicles" >> _vehicleClassName >> "Turrets" >> "MainTurret" >> "magazines");
     _magazines = _magazines arrayIntersect _magazines;
 
-    // diag_log format ["Ddd mags: %1", str _magazines];
+    LOG_1("Found mags: %1",str _magazines);
 
     private _ammo = _magazines apply {
          MagazineTypes getOrDefault [toUpper _x, objNull]
@@ -48,17 +48,18 @@ if (_ammoInfo isEqualTo objNull) then {
           _x select 1
     };
 
-    // diag_log ["Ddd ammo: %1", str _ammo];
+    LOG_1("Found ammo: %1",str _ammo);
 
-    private _ammoInfo = createHashMap;
+    _ammoInfo = createHashMap;
     {
         _ammoInfo set [_x get CLASS_NAME_PROPERTY, _x];
     } forEach _ammo;
 
-    // diag_log ["Ddd ammo info: %1", str _ammoInfo];
+    LOG_1("Created ammo info: %1",str _ammoInfo);
 
     _vehicleInfo set [AMMO_PROPERTY, _ammoInfo];
-    // diag_log ["Ddd vehicle info: %1", str _vehicleInfo];
+
+    LOG_1("Updated vehicle info: %1",str _vehicleInfo);
 };
 
 _ammoInfo
