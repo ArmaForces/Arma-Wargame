@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="AFWG">
+    <Package name="Compatibility_Global_Mobilization">
+        <Key ID="STR_AFWG_Compatibility_Global_Mobilization_Biber_Name">
+            <English>BrPz 1 Biber</English>
+            <Polish>BrPz 1 Biber</Polish>
+        </Key>
+        <Key ID="STR_AFWG_Compatibility_Global_Mobilization_Bo105M_VBH1A1_Name">
+            <English>Bo 105M/VBH-1A1</English>
+            <Polish>Bo 105M/VBH-1A1</Polish>
+        </Key>
+        <Key ID="STR_AFWG_Compatibility_Global_Mobilization_Bo105M_VBH1A1_Swooper_Name">
+            <English>Bo 105M/VBH-1A1 Swooper</English>
+            <Polish>Bo 105M/VBH-1A1 Swooper</Polish>
+        </Key>
+        <Key ID="STR_AFWG_Compatibility_Global_Mobilization_Bo105M_VBH1_ADAK_Name">
+            <English>Bo 105M/VBH-1 (ADAK)</English>
+        </Key>
+        <Key ID="STR_AFWG_Compatibility_Global_Mobilization_Bo105M_VBH1_Name">
+            <English>Bo 105M/VBH-1</English>
+            <Polish>Bo 105M/VBH-1</Polish>
+        </Key>
+        <Key ID="STR_AFWG_Compatibility_Global_Mobilization_Bo105M_VBH1_Police_Name">
+            <English>Bo 105M/VBH-1 (Police)</English>
+            <Polish>Bo 105M/VBH-1 (Policja)</Polish>
+            <German>Bo 105M/VBH-1 (Polizei)</German>
+        </Key>
+        <Key ID="STR_AFWG_Compatibility_Global_Mobilization_Bo105P_PAH1A1_Name">
+            <English>Bo 105P/PAH-1A1</English>
+            <Polish>Bo 105P/PAH-1A1</Polish>
+        </Key>
+        <Key ID="STR_AFWG_Compatibility_Global_Mobilization_Bo105P_PAH1_Name">
+            <English>Bo 105P/PAH-1</English>
+            <Polish>Bo 105P/PAH-1</Polish>
+        </Key>
+        <Key ID="STR_AFWG_Compatibility_Global_Mobilization_Fuchs1A0_Command_Name">
+            <English>TPz Fuchs 1A0 Command</English>
+            <Polish>TPz Fuchs 1A0 Dowodzenia</Polish>
+        </Key>
+        <Key ID="STR_AFWG_Compatibility_Global_Mobilization_Fuchs1A0_Engineer_Name">
+            <English>TPz Fuchs 1A0 Engineer</English>
+            <Polish>TPz Fuchs 1A0 Inżynieryjny</Polish>
+        </Key>
+        <Key ID="STR_AFWG_Compatibility_Global_Mobilization_Fuchs1A0_Medic_Name">
+            <English>TPz Fuchs 1A0 Medical</English>
+            <Polish>TPz Fuchs 1A0 Medyczny</Polish>
+        </Key>
+        <Key ID="STR_AFWG_Compatibility_Global_Mobilization_Fuchs1A0_Milan_Name">
+            <English>TPz Fuchs 1A0 (Milan)</English>
+            <Polish>TPz Fuchs 1A0 (Milan)</Polish>
+        </Key>
+        <Key ID="STR_AFWG_Compatibility_Global_Mobilization_Fuchs1A0_Name">
+            <English>TPz Fuchs 1A0</English>
+            <Polish>TPz Fuchs 1A0</Polish>
+        </Key>
+        <Key ID="STR_AFWG_Compatibility_Global_Mobilization_Fuchs1A0_Reconnaissance_Name">
+            <English>TPz Fuchs 1A0 Recon (Milan)</English>
+            <Polish>TPz Fuchs 1A0 Zwiadowczy (Milan)</Polish>
+        </Key>
+        <Key ID="STR_AFWG_Compatibility_Global_Mobilization_Fuchs1A4_Command_Name">
+            <English>TPz Fuchs 1A4 Command</English>
+            <Polish>TPz Fuchs 1A4 Dowodzenia</Polish>
+        </Key>
+        <Key ID="STR_AFWG_Compatibility_Global_Mobilization_Fuchs1A4_Engineer_Name">
+            <English>TPz Fuchs 1A4 Engineer</English>
+            <Polish>TPz Fuchs 1A4 Inżynieryjny</Polish>
+        </Key>
+        <Key ID="STR_AFWG_Compatibility_Global_Mobilization_Fuchs1A4_Medic_Name">
+            <English>TPz Fuchs 1A4 Medical</English>
+            <Polish>TPz Fuchs 1A4 Medyczny</Polish>
+        </Key>
+        <Key ID="STR_AFWG_Compatibility_Global_Mobilization_Fuchs1A4_Milan_Name">
+            <English>TPz Fuchs 1A4 (Milan)</English>
+            <Polish>TPz Fuchs 1A4 (Milan)</Polish>
+        </Key>
+        <Key ID="STR_AFWG_Compatibility_Global_Mobilization_Fuchs1A4_Name">
+            <English>TPz Fuchs 1A4</English>
+            <Polish>TPz Fuchs 1A4</Polish>
+        </Key>
+        <Key ID="STR_AFWG_Compatibility_Global_Mobilization_Fuchs1A4_Reconnaissance_Name">
+            <English>TPz Fuchs 1A4 Recon (Milan)</English>
+            <Polish>TPz Fuchs 1A4 Zwiadowczy (Milan)</Polish>
+        </Key>
+        <Key ID="STR_AFWG_Compatibility_Global_Mobilization_Fuchs_Name">
+            <English>TPz Fuchs</English>
+            <Polish>TPz Fuchs</Polish>
+        </Key>
+        <Key ID="STR_AFWG_Compatibility_Global_Mobilization_Gepard1A1_Name">
+            <English>Flakpanzer Gepard 1A1</English>
+            <Polish>Flakpanzer Gepard 1A1</Polish>
+        </Key>
+        <Key ID="STR_AFWG_Compatibility_Global_Mobilization_Gepard_Name">
+            <English>Flakpanzer Gepard</English>
+            <Polish>Flakpanzer Gepard</Polish>
+        </Key>
+        <Key ID="STR_AFWG_Compatibility_Global_Mobilization_Iltis_MG3_Name">
+            <English>Iltis (MG3)</English>
+            <Polish>Iltis (MG3)</Polish>
+        </Key>
+        <Key ID="STR_AFWG_Compatibility_Global_Mobilization_Iltis_Milan_Name">
+            <English>Iltis (Milan)</English>
+            <Polish>Iltis (Milan)</Polish>
+        </Key>
+        <Key ID="STR_AFWG_Compatibility_Global_Mobilization_Iltis_Name">
+            <English>Iltis</English>
+            <Polish>Iltis</Polish>
+        </Key>
+        <Key ID="STR_AFWG_Compatibility_Global_Mobilization_K125_Name">
+            <English>Hercules K 125 BW</English>
+            <Polish>Hercules K 125 BW</Polish>
+        </Key>
+        <Key ID="STR_AFWG_Compatibility_Global_Mobilization_Leopard1A0_Name">
+            <English>Leopard 1A0</English>
+            <Polish>Leopard 1A0</Polish>
+        </Key>
+        <Key ID="STR_AFWG_Compatibility_Global_Mobilization_Leopard1A1A1_Name">
+            <English>Leopard 1A1A1</English>
+            <Polish>Leopard 1A1A1</Polish>
+        </Key>
+        <Key ID="STR_AFWG_Compatibility_Global_Mobilization_Leopard1A1A2_Name">
+            <English>Leopard 1A1A2</English>
+            <Polish>Leopard 1A1A2</Polish>
+        </Key>
+        <Key ID="STR_AFWG_Compatibility_Global_Mobilization_Leopard1A1A3_Name">
+            <English>Leopard 1A1A3</English>
+            <Polish>Leopard 1A1A3</Polish>
+        </Key>
+        <Key ID="STR_AFWG_Compatibility_Global_Mobilization_Leopard1A1A4_Name">
+            <English>Leopard 1A1A4</English>
+            <Polish>Leopard 1A1A4</Polish>
+        </Key>
+        <Key ID="STR_AFWG_Compatibility_Global_Mobilization_Leopard1A1NO_Name">
+            <English>Leopard 1A1NO</English>
+            <Polish>Leopard 1A1NO</Polish>
+        </Key>
+        <Key ID="STR_AFWG_Compatibility_Global_Mobilization_Leopard1A1_Name">
+            <English>Leopard 1A1</English>
+            <Polish>Leopard 1A1</Polish>
+        </Key>
+        <Key ID="STR_AFWG_Compatibility_Global_Mobilization_Leopard1A3A1_Name">
+            <English>Leopard 1A3A1</English>
+            <Polish>Leopard 1A3A1</Polish>
+        </Key>
+        <Key ID="STR_AFWG_Compatibility_Global_Mobilization_Leopard1A3A2_Name">
+            <English>Leopard 1A3A2</English>
+            <Polish>Leopard 1A3A2</Polish>
+        </Key>
+        <Key ID="STR_AFWG_Compatibility_Global_Mobilization_Leopard1A3A3_Name">
+            <English>Leopard 1A3A3</English>
+            <Polish>Leopard 1A3A3</Polish>
+        </Key>
+        <Key ID="STR_AFWG_Compatibility_Global_Mobilization_Leopard1A3DK_Name">
+            <English>Leopard 1A3DK</English>
+            <Polish>Leopard 1A3DK</Polish>
+        </Key>
+        <Key ID="STR_AFWG_Compatibility_Global_Mobilization_Leopard1A3_Name">
+            <English>Leopard 1A3</English>
+            <Polish>Leopard 1A3</Polish>
+        </Key>
+        <Key ID="STR_AFWG_Compatibility_Global_Mobilization_Leopard1A4A1_Name">
+            <English>Leopard 1A4A1</English>
+            <Polish>Leopard 1A4A1</Polish>
+        </Key>
+        <Key ID="STR_AFWG_Compatibility_Global_Mobilization_Leopard1A4_Name">
+            <English>Leopard 1A4</English>
+            <Polish>Leopard 1A4</Polish>
+        </Key>
+        <Key ID="STR_AFWG_Compatibility_Global_Mobilization_Leopard1A5A1_Name">
+            <English>Leopard 1A5A1</English>
+            <Polish>Leopard 1A5A1</Polish>
+        </Key>
+        <Key ID="STR_AFWG_Compatibility_Global_Mobilization_Leopard1A5DK1_Name">
+            <English>Leopard 1A5DK1</English>
+            <Polish>Leopard 1A5DK1</Polish>
+        </Key>
+        <Key ID="STR_AFWG_Compatibility_Global_Mobilization_Leopard1A5DK_Name">
+            <English>Leopard 1A5DK</English>
+            <Polish>Leopard 1A5DK</Polish>
+        </Key>
+        <Key ID="STR_AFWG_Compatibility_Global_Mobilization_Leopard1A5NO2_Name">
+            <English>Leopard 1A5NO2</English>
+            <Polish>Leopard 1A5NO2</Polish>
+        </Key>
+        <Key ID="STR_AFWG_Compatibility_Global_Mobilization_Leopard1A5NO_Name">
+            <English>Leopard 1A5NO</English>
+            <Polish>Leopard 1A5NO</Polish>
+        </Key>
+        <Key ID="STR_AFWG_Compatibility_Global_Mobilization_Leopard1A5_Name">
+            <English>Leopard 1A5</English>
+            <Polish>Leopard 1A5</Polish>
+        </Key>
+        <Key ID="STR_AFWG_Compatibility_Global_Mobilization_Leopard1_Name">
+            <English>Leopard 1</English>
+            <Polish>Leopard 1</Polish>
+        </Key>
+        <Key ID="STR_AFWG_Compatibility_Global_Mobilization_LuchsA1_Name">
+            <English>SpPz Luchs A1</English>
+            <Polish>SpPz Luchs A1</Polish>
+        </Key>
+        <Key ID="STR_AFWG_Compatibility_Global_Mobilization_LuchsA2_Name">
+            <English>SpPz Luchs A2</English>
+            <Polish>SpPz Luchs A2</Polish>
+        </Key>
+        <Key ID="STR_AFWG_Compatibility_Global_Mobilization_Luchs_Name">
+            <English>SpPz Luchs</English>
+            <Polish>SpPz Luchs</Polish>
+        </Key>
+        <Key ID="STR_AFWG_Compatibility_Global_Mobilization_M113A1G_Milan_Name">
+            <English>M113A1G (Milan)</English>
+            <Polish>M113A1G (Milan)</Polish>
+        </Key>
+        <Key ID="STR_AFWG_Compatibility_Global_Mobilization_Marder1A0_Name">
+            <English>Marder 1A0</English>
+            <Polish>Marder 1A0</Polish>
+        </Key>
+        <Key ID="STR_AFWG_Compatibility_Global_Mobilization_Marder1A1A_Name">
+            <English>Marder 1A1A</English>
+            <Polish>Marder 1A1A</Polish>
+        </Key>
+        <Key ID="STR_AFWG_Compatibility_Global_Mobilization_Marder1A1Minus_Name">
+            <English>Marder 1A1-</English>
+            <Polish>Marder 1A1-</Polish>
+        </Key>
+        <Key ID="STR_AFWG_Compatibility_Global_Mobilization_Marder1A1Plus_Name">
+            <English>Marder 1A1+</English>
+            <Polish>Marder 1A1+</Polish>
+        </Key>
+        <Key ID="STR_AFWG_Compatibility_Global_Mobilization_Marder1A1_Name">
+            <English>Marder 1A1</English>
+            <Polish>Marder 1A1</Polish>
+        </Key>
+        <Key ID="STR_AFWG_Compatibility_Global_Mobilization_Marder1A2_Name">
+            <English>Marder 1A2</English>
+            <Polish>Marder 1A2</Polish>
+        </Key>
+        <Key ID="STR_AFWG_Compatibility_Global_Mobilization_Marder1_Name">
+            <English>Marder 1</English>
+            <Polish>Marder 1</Polish>
+        </Key>
+        <Key ID="STR_AFWG_Compatibility_Global_Mobilization_Milan_Name">
+            <English>Milan</English>
+            <Polish>Milan</Polish>
+        </Key>
+        <Key ID="STR_AFWG_Compatibility_Global_Mobilization_Milan_Tripod_Name">
+            <English>Milan - Tripod</English>
+            <Polish>Milan - Trójnóg</Polish>
+        </Key>
+        <Key ID="STR_AFWG_Compatibility_Global_Mobilization_Typ1200_DBP_Name">
+            <English>Volkswagen Beetle 1200 (Post)</English>
+            <Polish>Volkswagen Garbus 1200 (Poczta)</Polish>
+            <German>VW Käfer 1200 (Post)</German>
+        </Key>
+        <Key ID="STR_AFWG_Compatibility_Global_Mobilization_Typ1200_FF_Name">
+            <English>Volkswagen Beetle 1200 (Firefighters)</English>
+            <Polish>Volkswagen Garbus 1200 (Straż Pożarna)</Polish>
+            <German>VW Käfer 1200 (Feuerwehr)</German>
+        </Key>
+        <Key ID="STR_AFWG_Compatibility_Global_Mobilization_Typ1200_Name">
+            <English>Volkswagen Beetle 1200</English>
+            <Polish>Volkswagen Garbus 1200</Polish>
+            <German>VW Käfer 1200</German>
+        </Key>
+        <Key ID="STR_AFWG_Compatibility_Global_Mobilization_Typ1200_Patrol_Name">
+            <English>Volkswagen Beetle 1200 (Patrol)</English>
+            <Polish>Volkswagen Garbus 1200 (Patrol)</Polish>
+            <German>VW Käfer 1200 (Patrouille)</German>
+        </Key>
+        <Key ID="STR_AFWG_Compatibility_Global_Mobilization_Typ1200_Police_Name">
+            <English>Volkswagen Beetle 1200 (Police)</English>
+            <Polish>Volkswagen Garbus 1200 (Policja)</Polish>
+            <German>VW Käfer 1200 (Polizei)</German>
+        </Key>
+        <Key ID="STR_AFWG_Compatibility_Global_Mobilization_W123_DBP_Name">
+            <English>Mercedes-Benz W123 (Post)</English>
+            <Polish>Mercedes-Benz W123 (Poczta)</Polish>
+        </Key>
+        <Key ID="STR_AFWG_Compatibility_Global_Mobilization_W123_FF_Name">
+            <English>Mercedes-Benz W123 (Firefighters)</English>
+            <Polish>Mercedes-Benz W123 (Straż Pożarna)</Polish>
+            <German>Mercedes-Benz W123 (Feuerwehr)</German>
+        </Key>
+        <Key ID="STR_AFWG_Compatibility_Global_Mobilization_W123_Name">
+            <English>Mercedes-Benz W123</English>
+            <Polish>Mercedes-Benz W123</Polish>
+        </Key>
+        <Key ID="STR_AFWG_Compatibility_Global_Mobilization_W123_Police_Name">
+            <English>Mercedes-Benz W123 (Police)</English>
+            <Polish>Mercedes-Benz W123 (Policja)</Polish>
+            <German>Mercedes-Benz W123 (Polizei)</German>
+        </Key>
+        <Key ID="STR_AFWG_Compatibility_Global_Mobilization_W123_Taxi_Name">
+            <English>Mercedes-Benz W123 (Taxi)</English>
+            <Polish>Mercedes-Benz W123 (Taxi)</Polish>
+        </Key>
+    </Package>
+</Project>
