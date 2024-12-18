@@ -43,7 +43,7 @@
 #define RECON_ARMOR_ICON QUOTE(WARGAY_NATO_MARKERS_DIR\b_recon_armor.paa)
 #define RECON_ICON QUOTE(WARGAY_NATO_MARKERS_DIR\b_recon.paa)
 
-// Split it somehow
+// TODO: Consider moving all these to compatibility addons for other mods
 class CfgWargay
 {
     // westMarkerColor[] = {
@@ -595,7 +595,7 @@ class CfgWargay
             hitpoints = 10;
             ARMOR(2,2,1,1);
             iconPath = CV_ARMOR_ICON;
-            markerType = "b_hq";
+            markerType = "b_cv_armor";
             isCommandVehicle = 1;
         };
         class Truck_01_base_F // HEMTT
@@ -615,7 +615,7 @@ class CfgWargay
             hitpoints = 10;
             ARMOR(1,1,1,1);
             iconPath = ANTIAIR_SPAAG_RADAR_ICON;
-            markerType = "b_antiair";
+            markerType = "b_antiair_spaag_radar";
         };
 
         // TNK
@@ -635,7 +635,7 @@ class CfgWargay
             hitpoints = 10;
             ARMOR(2,2,1,1);
             iconPath = ANTITANK_ICON;
-            markerType = "b_motor_inf";
+            markerType = "b_antitank";
         };
 
         class CUP_nM1036_TOW_Base
@@ -644,7 +644,7 @@ class CfgWargay
             hitpoints = 10;
             ARMOR(0,0,0,0);
             iconPath = ANTITANK_ICON;
-            markerType = "b_motor_inf";
+            markerType = "b_antitank";
         };
 
         // HEL
@@ -678,7 +678,7 @@ class CfgWargay
             hitpoints = 10;
             ARMOR(1,1,1,1);
             iconPath = CV_ARMOR_ICON;
-            markerType = "b_hq";
+            markerType = "b_cv_armor";
             isCommandVehicle = 1;
         };
         class gm_iltis_cargo_base
@@ -687,7 +687,7 @@ class CfgWargay
             hitpoints = 5;
             ARMOR(0,0,0,0);
             iconPath = CV_ICON;
-            markerType = "b_hq";
+            markerType = "b_cv";
             isCommandVehicle = 1;
         };
         class gm_fuchsa0_command_base
@@ -696,7 +696,7 @@ class CfgWargay
             hitpoints = 10;
             ARMOR(1,1,1,1);
             iconPath = CV_ARMOR_ICON;
-            markerType = "b_hq";
+            markerType = "b_cv_armor";
             isCommandVehicle = 1;
         };
 
@@ -769,7 +769,7 @@ class CfgWargay
             hitpoints = 10;
             ARMOR(3,2,2,1);
             iconPath = ANTIAIR_SPAAG_RADAR_ICON;
-            markerType = "b_antiair";
+            markerType = "b_antiair_spaag_radar";
         };
         class gm_m109g_base
         {
@@ -785,7 +785,7 @@ class CfgWargay
             hitpoints = 10;
             ARMOR(0,0,0,0);
             iconPath = ART_ROCKET_ICON;
-            markerType = "b_art";
+            markerType = "b_art_rocket";
         };
 
         // VEH
@@ -801,7 +801,7 @@ class CfgWargay
         {
             pointCost = 20;
             iconPath = ANTITANK_ICON;
-            markerType = "b_motor_inf";
+            markerType = "b_antitank";
         };
         class gm_kat1_base
         {
@@ -822,7 +822,7 @@ class CfgWargay
             hitpoints = 10;
             ARMOR(4,2,1,1);
             iconPath = MECH_INF_ARMED_ICON;
-            markerType = "b_mech_inf";
+            markerType = "b_mech_inf_armed";
         };
         class gm_marder1a1plus_base : gm_marder1_base
         {
@@ -846,7 +846,7 @@ class CfgWargay
         {
             pointCost = 20;
             iconPath = ANTITANK_ARMOR_ICON;
-            markerType = "b_mech_inf";
+            markerType = "b_antitank_armor";
         };
         class gm_m113a1g_medic_base : gm_m113_base
         {
@@ -882,7 +882,7 @@ class CfgWargay
             hitpoints = 10;
             ARMOR(2,1,1,1);
             iconPath = RECON_ARMOR_ICON;
-            markerType = "b_recon";
+            markerType = "b_recon_armor";
             isRecon = 1;
         };
         class gm_fuchsa0_reconnaissance_base : gm_luchs_base
@@ -890,7 +890,7 @@ class CfgWargay
             pointCost = 10;
             ARMOR(1,1,1,1);
             iconPath = RECON_ANTITANK_ICON;
-            markerType = "b_recon";
+            markerType = "b_recon_antitank";
         };
         class gm_bo105m_base
         {
@@ -898,7 +898,7 @@ class CfgWargay
             hitpoints = 10; // Should be 4 according to Wargay
             ARMOR(0,0,0,0);
             iconPath = RECON_AIR_ICON;
-            markerType = "b_air";
+            markerType = "b_recon_air";
             isRecon = 1;
         };
 
@@ -945,7 +945,7 @@ class CfgWargay
             hitpoints = 5;
             ARMOR(0,0,0,0);
             iconPath = CV_ICON;
-            markerType = "b_hq";
+            markerType = "b_cv";
             isCommandVehicle = 1;
         };
         class gm_btr60pu12_base
@@ -954,7 +954,7 @@ class CfgWargay
             hitpoints = 10;
             ARMOR(1,1,1,1);
             iconPath = CV_ARMOR_ICON;
-            markerType = "b_hq";
+            markerType = "b_cv_armor";
             isCommandVehicle = 1;
         };
         class gm_brdm2um_base
@@ -963,7 +963,7 @@ class CfgWargay
             hitpoints = 10;
             ARMOR(1,1,1,1);
             iconPath = CV_ARMOR_ICON;
-            markerType = "b_hq";
+            markerType = "b_cv_armor";
             isCommandVehicle = 1;
         };
         class gm_t55ak_base
@@ -972,7 +972,7 @@ class CfgWargay
             hitpoints = 10;
             ARMOR(7,3,2,1);
             iconPath = CV_ARMOR_ICON;
-            markerType = "b_hq";
+            markerType = "b_cv_armor";
             isCommandVehicle = 1;
         };
         class gm_ural4320_repair_base
@@ -998,7 +998,7 @@ class CfgWargay
             hitpoints = 10;
             ARMOR(1,1,1,1);
             iconPath = ANTIAIR_SPAAG_RADAR_ICON;
-            markerType = "b_antiair";
+            markerType = "b_antiair_spaag_radar";
         };
         class gm_2s1_base
         {
@@ -1014,7 +1014,7 @@ class CfgWargay
             hitpoints = 10;
             ARMOR(1,1,1,1);
             iconPath = ART_ROCKET_ICON;
-            markerType = "b_art";
+            markerType = "b_art_rocket";
         };
         class gm_ural375d_mlrs_base
         {
@@ -1022,7 +1022,7 @@ class CfgWargay
             hitpoints = 5;
             ARMOR(0,0,0,0);
             iconPath = ART_ROCKET_ICON;
-            markerType = "b_art";
+            markerType = "b_art_rocket";
         };
 
         // TNK
@@ -1067,7 +1067,7 @@ class CfgWargay
         {
             pointCost = 10;
             iconPath = ANTITANK_ICON;
-            markerType = "b_motor_inf";
+            markerType = "b_antitank";
         };
         class gm_bmp1_base
         {
@@ -1075,7 +1075,7 @@ class CfgWargay
             hitpoints = 10;
             ARMOR(1,1,1,1);
             iconPath = MECH_INF_ARMED_ICON;
-            markerType = "b_mech_inf";
+            markerType = "b_mech_inf_armed";
         };
         class gm_btr60_base
         {
@@ -1089,7 +1089,7 @@ class CfgWargay
         {
             pointCost = 15;
             iconPath = MECH_INF_ARMED_ICON;// TODO: Consider MOTOR_INF_ARMED_ICON;
-            markerType = "b_mech_inf";
+            markerType = "b_mech_inf_armed";
         };
 
         // REC
@@ -1099,7 +1099,7 @@ class CfgWargay
             hitpoints = 10;
             ARMOR(2,1,1,1);
             iconPath = RECON_ARMOR_ICON;
-            markerType = "b_recon";
+            markerType = "b_recon_armor";
             isRecon = 1;
         };
         class gm_brdm2_base
@@ -1108,7 +1108,7 @@ class CfgWargay
             hitpoints = 10;
             ARMOR(1,1,1,1);
             iconPath = RECON_ARMOR_ICON;
-            markerType = "b_recon";
+            markerType = "b_recon_armor";
             isRecon = 1;
         };
         class gm_mi2p_base
@@ -1117,7 +1117,7 @@ class CfgWargay
             hitpoints = 10; // Should be 4 according to Wargay
             ARMOR(0,0,0,0);
             iconPath = RECON_AIR_ICON;
-            markerType = "b_air";
+            markerType = "b_recon_air";
             isRecon = 1;
         };
 
