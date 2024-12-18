@@ -15,5 +15,4 @@ class CfgPatches {
 };
 
 #include "CfgEventHandlers.hpp"
-// #include "CfgTest.hpp"
 #include "CfgWargay.hpp"
