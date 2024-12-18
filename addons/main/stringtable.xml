@@ -1,23 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="AFWG">
     <Package name="Main">
-        <Key ID="STR_AFP_Scripts_Settings_DisplayName">
-            <English>Mydlana Kampania Wargay</English>
-            <Polish>Mydlana Kampania Wargay</Polish>
-        </Key>
-        <Key ID="STR_AFP_Scripts_Settings_DisplayNameClient">
-            <English>Mydlana Kampania Wargay - Client</English>
-            <Polish>Mydlana Kampania Wargay - Klient</Polish>
-        </Key>
         <Key ID="STR_AFWG_Main_Attributes">
-            <English>ArmaForces Wargame Attributes</English>
-            <Polish>Atrybuty Wargame ArmaForces</Polish>
+            <English>Arma Wargame Attributes</English>
+            <Polish>Atrybuty Arma Wargame</Polish>
         </Key>
         <Key ID="STR_AFWG_Main_Category">
-            <English>ArmaForces Wargame</English>
+            <English>Armas Wargame</English>
+        </Key>
+        <Key ID="STR_AFWG_Main_DisplayName">
+            <English>Arma Wargame</English>
+            <Polish>Arma Wargame</Polish>
         </Key>
         <Key ID="STR_AFWG_Main_Toolbar">
-            <English>ArmaForces Wargame</English>
+            <English>Arma Wargame</English>
         </Key>
         <Key ID="STR_AFWG_Main_ToolbarWiki">
             <English>Wiki</English>

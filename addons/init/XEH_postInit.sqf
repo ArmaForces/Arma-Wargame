@@ -1,6 +1,9 @@
 #include "script_component.hpp"
 
-GVAR(isTest) = true;
+// Allow mission init to specify whether is it test run or not.
+if (isNil QGVAR(isTest)) then {
+    GVAR(isTest) = false;
+};
 
 AmmoTypes = createHashMapFromArray
     ("true" configClasses (configFile >> "CfgWargay" >> "Ammo")
