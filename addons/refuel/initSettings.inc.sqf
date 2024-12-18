@@ -1,0 +1,2 @@
+
+GVAR(fuelConsumptionMultiplier) = 4;

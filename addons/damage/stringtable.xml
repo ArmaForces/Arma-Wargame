@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="AFWG">
+    <Package name="Damage">
+        <Key ID="STR_AFWG_Damage_DisplayName">
+            <English>ArmaForces Wargame - Damage</English>
+            <Polish>ArmaForces Wargame - Damage</Polish>
+        </Key>
+        <Key ID="STR_AFWG_Damage_Enabled">
+            <English>Enable component</English>
+            <Polish>Włącz komponent</Polish>
+        </Key>
+        <Key ID="STR_AFWG_Damage_Enabled_Description">
+            <English>Controls whether this component is active.</English>
+            <Polish>Pozwala kontrolować czy komponent jest włączony.</Polish>
+        </Key>
+        <Key ID="STR_AFWG_Damage_ShowDamageFeedback">
+            <English>Show Damage Feedback</English>
+            <Polish>Informacja zwrotna o obrażeniach</Polish>
+        </Key>
+        <Key ID="STR_AFWG_Damage_ShowDamageFeedback_Description">
+            <English>Adds feedback message with dealt damage information - potential damage, armor hit and actual damage.</English>
+            <Polish>Dodaje informację zwrotną o zadanych obrażeniach - obrażenia potencjalne, trafiony pancerz i faktycznie zadane obrażenia.</Polish>
+        </Key>
+    </Package>
+</Project>

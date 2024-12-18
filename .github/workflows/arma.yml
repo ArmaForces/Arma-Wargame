@@ -23,31 +23,17 @@ jobs:
     - name: Check for BOM
       uses: arma-actions/bom-check@master
 
-  lint:
+  build-linux:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout the source code
-      uses: actions/checkout@master
-    - name: Lint (sqflint)
-      uses: arma-actions/sqflint@master
-      continue-on-error: true # No failure due to many false-positives
-
-  build:
-    runs-on: windows-2022
-    steps:
-    - name: Checkout the source code
-      uses: actions/checkout@master
-    - name: Pull Arma3Tools
-      run: |
-        echo ${{ secrets.CR_PAT }} | docker login -u ${{ secrets.CR_USER }} --password-stdin ghcr.io
-        docker pull ghcr.io/armaforces/arma3tools:v2
-    - name: Build using HEMTT
-      run: |
-        docker run -v "$(pwd):c:/workdir" -e CI=$True ghcr.io/armaforces/arma3tools:v2 hemtt release
-
-    - uses: actions/upload-artifact@v2
+      uses: actions/checkout@v4
+    - name: Setup HEMTT
+      uses: arma-actions/hemtt@v1
+    - name: Run HEMTT build
+      run: hemtt build
+    - uses: actions/upload-artifact@v4
       with:
-        name: armaforces_wargame
-        path: |
-            releases/*.zip
-            !releases/afwg-latest.zip
+        name: afwg_${{ github.sha }}-nobin
+        path: .hemttout/@*
+        include-hidden-files: true # Because .hemttout is a hidden directory

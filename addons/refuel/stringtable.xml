@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="AFWG">
+    <Package name="Refuel">
+        <Key ID="STR_AFWG_Refuel_DisplayName">
+            <English>ArmaForces Wargame - Refuel</English>
+            <Polish>ArmaForces Wargame - Refuel</Polish>
+        </Key>
+        <Key ID="STR_AFWG_Refuel_Enabled">
+            <English>Enable component</English>
+            <Polish>Włącz komponent</Polish>
+        </Key>
+        <Key ID="STR_AFWG_Refuel_Enabled_Description">
+            <English>Controls whether this component is active.</English>
+            <Polish>Pozwala kontrolować czy komponent jest włączony.</Polish>
+        </Key>
+        <Key ID="STR_AFWG_Refuel_RefuelFinished">
+            <English>Refuel finished</English>
+            <Polish>Tankowanie zakończone</Polish>
+        </Key>
+        <Key ID="STR_AFWG_Refuel_RefuelInterrupted">
+            <English>Refuel interrupted %1 percent</English>
+            <Polish>Tankowanie przerwane %1 procent</Polish>
+        </Key>
+        <Key ID="STR_AFWG_Refuel_RefuelProgress">
+            <English>Refuel progress %1 percent</English>
+            <Polish>Postęp tankowania %1 procent</Polish>
+        </Key>
+    </Package>
+</Project>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="AFWG">
+    <Package name="Hud">
+        <Key ID="STR_AFWG_Hud_DisplayName">
+            <English>ArmaForces Wargame - Hud</English>
+            <Polish>ArmaForces Wargame - Hud</Polish>
+        </Key>
+        <Key ID="STR_AFWG_Hud_Enabled">
+            <English>Enable component</English>
+            <Polish>Włącz komponent</Polish>
+        </Key>
+        <Key ID="STR_AFWG_Hud_Enabled_Description">
+            <English>Controls whether this component is active.</English>
+            <Polish>Pozwala kontrolować czy komponent jest włączony.</Polish>
+        </Key>
+    </Package>
+</Project>

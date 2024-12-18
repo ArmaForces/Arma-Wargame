@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="AFWG">
+    <Package name="Deployment">
+        <Key ID="STR_AFWG_Deployment_DeploymentFailure">
+            <English>Failed deploying vehicle</English>
+            <Polish>Nie udało się rozmieścić pojazdu</Polish>
+        </Key>
+        <Key ID="STR_AFWG_Deployment_DeploymentOfVehicle">
+            <English>%2 deployed new '%1' vehicle.</English>
+            <Polish>%2 rozmieścił nowy pojazd '%1'.</Polish>
+        </Key>
+        <Key ID="STR_AFWG_Deployment_DeploymentOfVehicleNoLongerPossible">
+            <English>Deployment of new '%1' vehicle is no longer possible.</English>
+            <Polish>Rozmieszczenie nowych pojazdów '%1' już nie jest możliwe.</Polish>
+        </Key>
+        <Key ID="STR_AFWG_Deployment_DisplayName">
+            <English>ArmaForces Wargame - Deployment</English>
+            <Polish>ArmaForces Wargame - Deployment</Polish>
+        </Key>
+        <Key ID="STR_AFWG_Deployment_Enabled">
+            <English>Enable component</English>
+            <Polish>Włącz komponent</Polish>
+        </Key>
+        <Key ID="STR_AFWG_Deployment_Enabled_Description">
+            <English>Controls whether this component is active.</English>
+            <Polish>Pozwala kontrolować czy komponent jest włączony.</Polish>
+        </Key>
+        <Key ID="STR_AFWG_Deployment_UnitLost">
+            <English>Lost %1 %2</English>
+            <Polish>Utracono %1 %2</Polish>
+        </Key>
+    </Package>
+</Project>

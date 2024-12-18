@@ -1,10 +1,6 @@
 #define COMPONENT common
 #include "\z\afwg\addons\main\script_mod.hpp"
 
-#include "\a3\ui_f\hpp\defineCommonGrids.inc"
-#include "\a3\ui_f\hpp\defineResincl.inc"
-#include "\a3\ui_f\hpp\defineResinclDesign.inc"
-
 // #define DEBUG_MODE_FULL
 // #define DISABLE_COMPILE_CACHE
 

@@ -2,14 +2,18 @@
 <Project name="AFWG">
     <Package name="Main">
         <Key ID="STR_AFWG_Main_Attributes">
-            <English>ArmaForces Attributes</English>
-            <Polish>Atrybuty ArmaForces</Polish>
+            <English>Arma Wargame Attributes</English>
+            <Polish>Atrybuty Arma Wargame</Polish>
         </Key>
         <Key ID="STR_AFWG_Main_Category">
-            <English>ArmaForces</English>
+            <English>Armas Wargame</English>
+        </Key>
+        <Key ID="STR_AFWG_Main_DisplayName">
+            <English>Arma Wargame</English>
+            <Polish>Arma Wargame</Polish>
         </Key>
         <Key ID="STR_AFWG_Main_Toolbar">
-            <English>ArmaForces</English>
+            <English>Arma Wargame</English>
         </Key>
         <Key ID="STR_AFWG_Main_ToolbarWiki">
             <English>Wiki</English>
