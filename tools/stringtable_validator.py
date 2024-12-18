@@ -57,8 +57,10 @@ def check_stringtable(filepath):
 
         if package_name.lower() != component_folder_name:
             # TODO: Check if it might be subaddon
-            print("  ERROR: Package name attribute '{}' does not match the component folder name '{}'.".format(package_name, component_folder_name))
-            errors += 1
+            subcomponent_folder_name = os.path.join(os.path.dirname(os.path.dirname(filepath)), component_folder_name)
+            if package_name.lower() != subcomponent_folder_name:
+                print("  ERROR: Package name attribute '{}' does not match any of component folder name '{}' and subcomponent '{}'.".format(package_name, component_folder_name, subcomponent_folder_name))
+                errors += 1
 
         # Get all keys contained in the stringtable
         keys = package.findall("Key")
