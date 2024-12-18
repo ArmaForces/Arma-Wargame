@@ -15,7 +15,7 @@
 params ["_caller", "_target"];
 
 alive _target && {
-    _caller call FUNC(isEngineer) && {
+    _caller call EFUNC(common,isEngineer) && {
     vehicle _caller isEqualTo _caller && {
     _caller distance _target < 5 && {
     ((_target getVariable ["MDL_lastCombatActive", -GVAR(repairMinNoCombatTime)]) + GVAR(repairMinNoCombatTime)) < CBA_missionTime
