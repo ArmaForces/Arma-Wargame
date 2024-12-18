@@ -18,6 +18,7 @@ class CfgWargay
     class Ammo
     {
         class NO_DAMAGE;
+        class Tank_HE;
 
         class Sh_105mm_APFSDS_T_Red
         {
@@ -32,11 +33,7 @@ class CfgWargay
             type = "HEAT";
         };
 
-        class Sh_120mm_HE_Tracer_Red
-        {
-            damage = 3;
-            type = "HE";
-        };
+        class Sh_120mm_HE_Tracer_Red : Tank_HE {};
 
         class 4Rnd_hot2_ammo : HAS_PENETRATOR(ammo_Penetrator_Titan_AT_long);
         class ammo_Penetrator_Titan_AT_long
