@@ -750,6 +750,9 @@ class CfgWargay
             markerType = "b_mech_inf_armed";
         };
 
+        // SKOT-2A https://wargame.fandom.com/wiki/SKOT-2A
+        class gm_ot64_base : gm_btr60_base {};
+
         // REC
         class gm_pt76_base
         {
