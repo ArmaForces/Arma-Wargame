@@ -36,3 +36,5 @@
     drawLine3D [_position, _position vectorAdd vectorNormalized _vector, [0,1,1,1]];
 } forEach TargetDirVectors;
 #endif
+
+nil

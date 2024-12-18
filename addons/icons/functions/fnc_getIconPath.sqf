@@ -7,7 +7,7 @@
  * 0: Vehicle <OBJECT>
  *
  * Return Value:
- * None
+ * Path to vehicle icon <STRING>
  *
  * Public: No
  */

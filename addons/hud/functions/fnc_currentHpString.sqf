@@ -9,7 +9,7 @@
  * 1: Optional character for non-damaged squares <STRING>
  *
  * Return Value:
- * None
+ * Stringified HP boxes display <STRING>
  *
  * Public: No
  */

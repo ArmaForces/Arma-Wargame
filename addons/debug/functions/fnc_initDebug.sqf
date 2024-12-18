@@ -20,3 +20,5 @@ ProjectileRelPosVectors = [];
 SurfaceVectors = [];
 VelocityVectors = [];
 #endif
+
+nil

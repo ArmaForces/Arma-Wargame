@@ -16,4 +16,4 @@
 
 if (GVAR(isTest) || {!isServer}) exitWith {};
 
-saveProfileNamespace
+saveProfileNamespace;

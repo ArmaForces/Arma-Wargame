@@ -8,7 +8,7 @@
  * 0: Player UID <STRING>
  *
  * Return Value:
- * None
+ * Map containing player statistics <HASHMAP>
  *
  * Public: No
  */

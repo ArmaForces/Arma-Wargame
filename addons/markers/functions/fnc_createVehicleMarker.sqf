@@ -1,13 +1,13 @@
 #include "script_component.hpp"
 /*
  * Author: 3Mydlo3
- *
+ * Creates local marker for given vehicle.
  *
  * Arguments:
- *
+ * 0: Vehicle to create marker for <VEHICLE>
  *
  * Return Value:
- * None
+ * Name of the created marker <STRING>
  *
  * Public: No
  */
