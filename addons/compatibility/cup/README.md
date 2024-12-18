@@ -1,7 +1,7 @@
-## CUP
+# CUP
 
-Compatibility addon for [French Armour Pack](https://steamcommunity.com/sharedfiles/filedetails/?id=3317407146).
+Compatibility addon for [CUP Vehicles](https://steamcommunity.com/sharedfiles/filedetails/?id=541888371).
 
-### Notes
+## Notes
 
-This mod uses vanilla ammo classes, thus might result in degraded experience in combination with other mods that use vanilla ammo.
+Not all classes are covered by this compat. Pay attention to warnings and incorrect unit stats (like basic cost or no armor for a tank). Feel free to contribute.

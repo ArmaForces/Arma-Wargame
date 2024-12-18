@@ -1,7 +1,7 @@
-## CUP
+# Cold War Rearmed III
 
-Compatibility addon for [French Armour Pack](https://steamcommunity.com/sharedfiles/filedetails/?id=3317407146).
+Compatibility addon for [Cold War Rearmed III](https://steamcommunity.com/workshop/filedetails/?id=2316343124).
 
-### Notes
+## Notes
 
-This mod uses vanilla ammo classes, thus might result in degraded experience in combination with other mods that use vanilla ammo.
+Not all classes are covered by this compat. Pay attention to warnings and incorrect unit stats (like basic cost or no armor for a tank). Feel free to contribute.
