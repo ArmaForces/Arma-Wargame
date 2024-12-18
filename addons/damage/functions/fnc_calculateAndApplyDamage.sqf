@@ -42,11 +42,9 @@ if (_ammoInfo isEqualTo []) then {
     };
 };
 if (_ammoInfo isEqualTo []) exitWith {
-    #ifdef DEV_DEBUG
     private _infoMsg = format ["Unknown ammunition '%1' used, ignoring calculations",_ammoClassName];
     systemChat _infoMsg;
-    diag_log _infoMsg;
-    #endif
+    WARNING(_infoMsg);
 };
 
 private _ammoDamage = _ammoInfo getOrDefault ["damage", 0];
