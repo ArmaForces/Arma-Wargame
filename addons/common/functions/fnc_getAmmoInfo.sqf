@@ -44,7 +44,7 @@ if (_ammoInfo isEqualTo objNull) then {
     }
     select {_x select 1 isNotEqualTo objNull}
     apply {
-          (_x select 1) set ["displayNameShort", getText (configFile >> "CfgMagazines" >> (_x select 0) >> "displayNameShort")];
+          (_x select 1) set ["displayName", getText (configFile >> "CfgMagazines" >> (_x select 0) >> "displayName")];
           _x select 1
     };
 
@@ -120,7 +120,7 @@ _ammo apply {
   [_x select 0, AmmoTypes getOrDefault [toUpper (_x select 1), objNull]];
 } select {_x select 1 isNotEqualTo objNull}
 apply {
-  (_x select 1) set ["displayNameShort", getText (configFile >> "CfgMagazines" >> (_x select 0) >> "displayNameShort")];
+  (_x select 1) set ["displayName", getText (configFile >> "CfgMagazines" >> (_x select 0) >> "displayName")];
   _x select 1
 }
 

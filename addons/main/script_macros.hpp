@@ -25,7 +25,7 @@
 #define AMMO_PROPERTY "ammo"
 #define CLASS_NAME_PROPERTY "className"
 #define DAMAGE_PROPERTY "damage"
-#define DISPLAY_NAME_PROPERTY "displayNameShort"
+#define DISPLAY_NAME_PROPERTY "displayName"
 #define TYPE_PROPERTY "type"
 #define MAX_HP 10
 #define NO_ARMOR [0, 0, 0, 0]

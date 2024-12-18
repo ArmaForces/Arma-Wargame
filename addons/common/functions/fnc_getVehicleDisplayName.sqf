@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 /*
  * Author: 3Mydlo3, veteran29
- * Returns displayNameShort for given vehicle type.
+ * Returns displayName for given vehicle type.
  *
  * Arguments:
  * 0: Vehicle or unit info <OBJECT/HASHMAP>
