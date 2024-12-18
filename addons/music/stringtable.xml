@@ -1,18 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="AFWG">
     <Package name="Music">
-        <Key ID="STR_AFWG_Music_DisplayName">
-            <English>ArmaForces Wargame - Music</English>
-            <Polish>ArmaForces Wargame - Music</Polish>
-        </Key>
-        <Key ID="STR_AFWG_Music_Enabled">
-            <English>Enable component</English>
-            <Polish>Włącz komponent</Polish>
-        </Key>
-        <Key ID="STR_AFWG_Music_Enabled_Description">
-            <English>Controls whether this component is active.</English>
-            <Polish>Pozwala kontrolować czy komponent jest włączony.</Polish>
-        </Key>
         <Key ID="STR_AFWG_Music_DamageAlarmEnabled">
             <English>Damage alarm</English>
             <Polish>Alarm o uszkodzeniach</Polish>
@@ -24,6 +12,18 @@
         <Key ID="STR_AFWG_Music_DamageReceived">
             <English>Damage received</English>
             <Polish>Otrzymano uszkodzenia</Polish>
+        </Key>
+        <Key ID="STR_AFWG_Music_DisplayName">
+            <English>ArmaForces Wargame - Music</English>
+            <Polish>ArmaForces Wargame - Music</Polish>
+        </Key>
+        <Key ID="STR_AFWG_Music_Enabled">
+            <English>Enable component</English>
+            <Polish>Włącz komponent</Polish>
+        </Key>
+        <Key ID="STR_AFWG_Music_Enabled_Description">
+            <English>Controls whether this component is active.</English>
+            <Polish>Pozwala kontrolować czy komponent jest włączony.</Polish>
         </Key>
     </Package>
 </Project>

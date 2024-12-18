@@ -13,14 +13,6 @@
             <English>Controls whether this component is active.</English>
             <Polish>Pozwala kontrolować czy komponent jest włączony.</Polish>
         </Key>
-        <Key ID="STR_AFWG_Icons_UnitIcons">
-            <English>Unit Icons</English>
-            <Polish>Znaczniki jednostek</Polish>
-        </Key>
-        <Key ID="STR_AFWG_Icons_UnitIconsSize">
-            <English>Icon size multiplier</English>
-            <Polish>Mnożnik rozmiaru znaczników</Polish>
-        </Key>
         <Key ID="STR_AFWG_Icons_UnitIconSizeDependsOnDistance">
             <English>Icon size depending on distance</English>
             <Polish>Rozmiar znaczników zależny od odległości</Polish>
@@ -44,6 +36,14 @@
         <Key ID="STR_AFWG_Icons_UnitIconTextSizeMultiplier_Description">
             <English>Allows adjusting size of text shown above targeted unit</English>
             <Polish>Pozwala dostosować rozmiar tekstu wyświetlanego nad namierzoną jednostką</Polish>
+        </Key>
+        <Key ID="STR_AFWG_Icons_UnitIcons">
+            <English>Unit Icons</English>
+            <Polish>Znaczniki jednostek</Polish>
+        </Key>
+        <Key ID="STR_AFWG_Icons_UnitIconsSize">
+            <English>Icon size multiplier</English>
+            <Polish>Mnożnik rozmiaru znaczników</Polish>
         </Key>
     </Package>
 </Project>
