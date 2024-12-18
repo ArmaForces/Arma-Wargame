@@ -13,10 +13,11 @@
 
 class CfgWargay
 {
+    // Mod uses vanilla ammo, so it might be incompatible in some scenarios
+    // TODO: Configure B_30mm_APFSDS_Tracer_Green and B_30mm_MP_Tracer_Green if needed
     class Ammo
     {
-        // Mod uses vanilla ammo, so it might be incompatible in some scenarios
-        // TODO: Configure B_30mm_APFSDS_Tracer_Green and B_30mm_MP_Tracer_Green if needed
+        class NO_DAMAGE;
 
         class Sh_105mm_APFSDS_T_Red
         {
